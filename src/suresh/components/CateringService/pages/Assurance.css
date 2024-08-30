@@ -1,0 +1,78 @@
+/*<------------------- Assurance start ---------------> */
+.assurance {
+  width: 100%;
+  background: #7c1109;
+  margin: 2rem auto;
+}
+.assurance .flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.assurance .flex-box .box {
+  width: 265px;
+  height: 245px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #fff;
+  margin: 20px 0;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+.assurance .flex-box .box img {
+  width: 68px;
+  height: 68px;
+}
+.assurance .flex-box .box p {
+  color: #fff;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 27px;
+  font-weight: 600;
+  font-family: "Outfit";
+}
+
+/*<------------------- Assurance end ---------------> */
+
+@media screen and (max-width : 768px) {
+  /*<------------------- Assurance start ---------------> */
+.assurance {
+  width: 100%;
+  background: #7c1109;
+  background-image: url(../images/darkback.png);
+  margin: 0 auto;
+}
+.assurance .flex-box {
+  flex-direction: column;
+  gap: 30px;
+}
+.assurance .flex-box .box {
+  width: 160px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #fff;
+  margin: 20px 0;
+  padding: 0px 0px;
+  border-radius: 10px;
+}
+.assurance .flex-box .box img {
+  width: 45px;
+  height: 45px;
+}
+.assurance .flex-box .box p {
+  color: #fff;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Outfit";
+}
+}

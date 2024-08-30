@@ -1,0 +1,104 @@
+/*<------------------- corporate types start ---------------> */
+.cateringtypes {
+  width: 100%;
+  background: #f06d27;
+  margin: 7rem auto;
+  padding: 10px 0;
+}
+.cateringtypes .wrapper-container {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+.cateringtypes .wrapper-container .wrapper-left {
+  width: 538px;
+}
+.cateringtypes .wrapper-container .wrapper-left h3 {
+  font-size: 30px;
+  font-size: 600;
+  color: #fff;
+  font-family: "Outfit", serif;
+  padding-bottom: 20px;
+}
+.cateringtypes .wrapper-container .wrapper-left p {
+  width: 638px;
+  font-size: 24px;
+  line-height: 2.6rem;
+  font-weight: 300;
+  font-family: "Outfit", serif;
+  color: #fff;
+}
+.wrapper-container .wrapper-right {
+  width: 602.16px;
+  height: 567px;
+  margin: 60px 0;
+  position: relative;
+}
+
+
+
+.wrapper-container .wrapper-right .wrap-container {
+  width: 581.64px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper-container .wrapper-right .wrap-container img{
+  width: 100%;
+} 
+
+
+/*<------------------- corporate types end ---------------> */
+
+@media screen and (max-width: 786px) {
+  .cateringtypes {
+    width: 100%;
+    background: #f06d27;
+    margin: 4rem auto;
+  }
+  .cateringtypes .wrapper-container{
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0;
+  }
+  .cateringtypes .wrapper-container .wrapper-left{
+    width: 340px;
+    padding: 0 20px;
+  }
+  .wrapper-container .wrapper-right {
+    width: 260.16px;
+    height: 207.13px;
+    margin: 0px 0;
+  }
+  .wrapper-container .wrapper-right .wrap-container {
+    width: 212.48px;
+    height: 191.99px;
+    margin: 0px auto;
+
+  }
+  .cateringtypes .wrapper-container .wrapper-left {
+    margin: 0 auto;
+  }
+  .cateringtypes .wrapper-container .wrapper-left h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Outfit", serif;
+    padding-bottom: 20px;
+  }
+  .cateringtypes .wrapper-container .wrapper-left p {
+    width: 280px;
+    font-size: 14px;
+    line-height: 1.5rem;
+    font-weight: 300;
+    font-family: "Outfit", serif;
+    color: #fff;
+  }
+}

@@ -1,0 +1,242 @@
+/* Main container styles */
+.hero-section {
+  width: 100%;
+  height: 50vh;
+  margin: 10rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sub container styles */
+.sub-container {
+  width: 95%;
+  margin: 0 auto;
+  height: 425px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left div styles */
+.left-div {
+  width: 600px;
+}
+
+.left-div h1 {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Outfit";
+  margin-bottom: 30px;
+}
+
+.left-div p {
+  width: 628px;
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33px;
+  font-family: "Outfit";
+}
+.right-div {
+  width: 660px;
+  height: 380px;
+  position: relative;
+}
+/* Right div styles */
+
+.right-div .image-container {
+  width: 660px;
+  height: 380px;
+  object-fit: cover;
+}
+.right-div .circle {
+  position: absolute;
+  right: -30px;
+  bottom: -40px;
+  z-index: -5;
+}
+.right-div .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.right-div .circle2 {
+  position: absolute;
+  left: -49px;
+  top: -65px;
+  z-index: -5;
+}
+.right-div .image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1040px) {
+  .hero-section {
+    width: 100%;
+    height: 30vh;
+    margin: 10rem auto;
+  }
+  .sub-container {
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 40px;
+  }
+
+  .left-div {
+    width: 460px;
+  }
+
+  .left-div h1 {
+    width: 100%;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: "Outfit";
+    margin-bottom: 25px;
+  }
+
+  .left-div p {
+    width: 488px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 33px;
+    font-family: "Outfit";
+  }
+  .right-div {
+    width: 420px;
+    height: 380px;
+  }
+  /* Right div styles */
+
+  .right-div .image-container {
+    width: 420px;
+    height: 280px;
+    object-fit: cover;
+  }
+  .right-div .image-container img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    padding: 20px;
+    margin: 4rem auto;
+  }
+
+  .left-div {
+    width: 340px;
+  }
+  .left-div h1 {
+    width: 328px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Outfit";
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  .left-div p {
+    width: 328px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    font-family: "Outfit";
+  }
+
+  .right-div {
+    width: 325px;
+    height: 200px;
+  }
+  /* Right div styles */
+
+  .right-div .image-container {
+    width: 325px;
+    height: 200px;
+  }
+  .right-div .circle {
+    position: absolute;
+    width: 120px;
+    right: 2;
+    bottom: -40px;
+    z-index: -5;
+  }
+  .right-div .image-container img {
+    width: 100%;
+  }
+  .right-div .circle img {
+    width: 100%;
+  }
+  .right-div .circle2 {
+    position: absolute;
+    left: -25px;
+    top: -25px;
+    z-index: -5;
+  }
+  .right-div .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-div {
+    width: 340px;
+  }
+  .left-div h1 {
+    width: 328px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Outfit";
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  .left-div p {
+    width: 328px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    font-family: "Outfit";
+  }
+
+  .right-div {
+    width: 325px;
+    height: 200px;
+  }
+  /* Right div styles */
+
+  .right-div .image-container {
+    width: 325px;
+    height: 200px;
+  }
+  .right-div .circle {
+    position: absolute;
+    width: 120px;
+    right: 2;
+    bottom: -40px;
+    z-index: -5;
+  }
+  .right-div .image-container img {
+    width: 100%;
+  }
+  .right-div .circle img {
+    width: 100%;
+  }
+  .right-div .circle2 {
+    position: absolute;
+    left: -25px;
+    top: -25px;
+    z-index: -5;
+  }
+  .right-div .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+}

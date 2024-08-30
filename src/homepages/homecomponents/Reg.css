@@ -1,0 +1,219 @@
+
+
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #7C1109;
+  } */
+  .registermainparent{
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .registparent{
+    
+  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height:99%;
+    width: 90%;
+    background-color: #7C1109;
+    padding: 10px;
+    border-radius: 7px;
+    margin-bottom: 10vh;
+  }
+  .registermaincontainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .registermaincontainer > h1{
+    color: azure;
+    text-align: center;
+   width: 50%;
+  font-size: 65px;
+  font-style:normal;
+  margin:20px 0;
+  
+  }
+  .sendmestext{
+    color: black;
+    text-align: center;
+    font-size: 40px; 
+    line-height: 0px;
+    
+    
+    
+    
+  
+  }
+  .formcontainer {
+    background-color: #7C1109;
+    height: 100%;
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  form {
+    background-color: white;
+    text-align: center;
+  
+   justify-content: space-between;
+    height: auto;
+    flex-direction: column;
+     width: 70%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+   
+  }
+  
+ 
+  form div {
+    margin-bottom: 10px;
+    text-align: left;
+  
+  }
+  
+  form label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  form input {
+    width: 80%;
+   padding: 10px;
+    margin-bottom: 13px;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    box-sizing: border-box;
+  }
+  
+  form button {
+  
+    padding: 10px 30px;
+    background-color: #7C1109;
+    margin-top: 20px;
+    color: #FFD914;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    
+  }
+  .tetxarea{
+  width: 80%;
+    height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border: none;
+  height: 100px;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 20px;
+  }
+  .tetxarea:focus{
+    border: none;
+    outline: none;
+  }
+  form button:hover {
+    background-color: #5a0c07;
+  } 
+  .formsubcontainer{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+  
+  }
+  .inputcon{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    
+    align-items: center;
+    justify-content:space-between;
+  }
+  .inputcon >div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .inputcon >div >input{
+    width: 80%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;;
+  }
+  .inputcon >div >input:focus{
+    outline: none;
+  }
+  
+  
+  .formbtn{
+    
+    
+  }
+
+  @media (max-width: 768px){
+    .registermaincontainer h1{
+      font-size: 30px;width: 80%;
+    }
+    .registermaincontainer{
+      flex-direction: column;
+      justify-content: flex-start;
+      
+    }  
+    .sendmestext{
+      font-size: 20px;
+      height: 10px;
+      padding: 20px 0;
+      
+      margin: 20px 0;line-height: 0;
+
+    }
+    .inputcon >div{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+    }
+    .tetxarea{
+      height: 80px;
+      font-size: 12px;
+    }
+    form input{
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+  }

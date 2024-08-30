@@ -1,0 +1,82 @@
+
+.aeventcon{
+    display: flex;
+    flex-direction: row;
+   
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid black;
+    height: 100%;
+    
+   
+
+}
+.aeventtitlecon{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 4px ;
+}
+.aeventtitlecon button{
+    font-family: Outfit;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 5px 10px;
+    
+    letter-spacing: 0.07em;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #141414;
+
+}
+.aeventtable{
+    width: 100%;
+
+}
+.aeventtable table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.aeventtable tr{
+
+}
+.aeventtable td,th{
+    border: 1px solid black;
+}
+.eventdetail td{
+    padding: 4px;
+}
+.eventbuttonstr{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.eventbuttonstr{
+    color:#FFFFFF;
+    font-family: Outfit;
+font-size: 16px;
+font-weight: 600;
+border-radius: 4px;
+letter-spacing: 0.07em;
+text-align: left;
+justify-content: space-evenly;
+align-items: center;
+text-align: center;
+
+}
+.eadone{
+    width: 47%;
+    background-color: #1D8F3C;
+    margin-bottom: 4px;
+}
+.eadeny{
+    width: 40%;
+    background-color: #F91B1B;
+    margin-bottom: 4px;
+}
+.eamodify{
+    width: 90%;
+    background-color: #135CFF;
+}

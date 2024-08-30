@@ -1,0 +1,121 @@
+/*<------------------- corporate start ---------------> */
+.corporate {
+  padding: 50px 0;
+  width: 100%;
+  height: 384px;
+  margin: 10rem auto;
+  margin-bottom: 20rem;
+}
+.wrapper {
+  width: 100%;
+  max-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+
+.wrapper .wrapper-left {
+  width: 565px;
+  height: 325px;
+  position: relative;
+}
+.wrapper .wrapper-left .fullviewornam{
+  position: absolute;
+  width: 200px;
+  bottom: -3rem;
+  left: -1.3rem;
+  z-index: -5;
+}
+.wrapper .wrapper-left .fullviewornam img{
+  width: 100%;
+}
+.wrapper .wrapper-left .mobviewornam{
+  display: none;
+}
+.wrapper .wrapper-left img {
+  width: 100%;
+}
+.wrapper .wrapper-right {
+  display: flex;
+  width: 640px;
+
+  align-items: start;
+  gap: 30px;
+  flex-direction: column;
+}
+.wrapper .wrapper-right h3 {
+  width: 444px;
+  height: 24px;
+  font-size: 30px;
+  color: #000000;
+  font-family: "Outfit", serif;
+  text-align: start;
+}
+.wrapper .wrapper-right p {
+  width: 640px;
+  height: 165px;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: "Outfit";
+  line-height: 42px;
+  margin: 0 auto;
+}
+
+/*<------------------- corporate end ---------------> */
+
+@media screen and (max-width: 786px) {
+  /*<------------------- corporate start ---------------> */
+  .corporate {
+    padding: 20px 0;
+    width: 100%;
+    margin: 0rem auto;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .wrapper .wrapper-left {
+    width: 254.75px;
+    height: 145.25px;
+    margin: 0 auto;
+  }
+  .wrapper .wrapper-left .fullviewornam{
+   display: none;
+  }
+  .wrapper .wrapper-left .mobviewornam{
+    display: block;
+    position: absolute;
+    bottom: -1.8rem;
+    z-index: -5;
+  }
+  .wrapper .wrapper-right {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    text-align: start;
+    margin: 0 auto;
+  }
+  .wrapper .wrapper-right h3 {
+    width: 340px;
+    height: 34px;
+    font-size: 16px;
+    margin-top: 10px;
+    padding-left: 50px;
+    font-family: "Outfit", serif;
+  }
+  .wrapper .wrapper-right p {
+    width: 358px;
+    padding: 0 40px;
+    font-size: 14px;
+    font-family: "Outfit";
+    line-height: 20px;
+    letter-spacing: 0.05rem;
+  }
+}

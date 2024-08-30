@@ -1,0 +1,1046 @@
+.landparent{
+    width: 100%;
+     background: #FFFAF6;
+   overflow-x: hidden;
+    
+}
+.land1main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 100px;
+    background:url('./../assets/land/land1back.png')  ;
+    background-position: center;
+    background-size: cover;
+}
+.land1textcon{
+    height: 57%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.land1left{
+    background-color: #FFFFFF3D;
+    width: 58%;
+    
+    border-radius: 10px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.land1left p{
+   
+color: #FFFFFF;
+}
+.land1leftp1{
+    font-family: Outfit;
+font-size: 28px;
+font-weight: 700;
+line-height: 41.58px;
+text-align: center;
+
+}
+.land1leftp2{
+    font-family: Outfit;
+font-size: 40px;
+font-weight: 700;
+line-height: 65.52px;
+text-align: center;
+
+}
+.land1leftp3{
+    font-family: Outfit;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 49.14px;
+    text-align: center;
+    
+}
+.land1right{
+    width: 450px;
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    background-color: #FFFFFF3D;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 40px;
+    justify-content: space-evenly;
+
+
+}
+.land1right>input,.land1right>div,.land1right>select{
+    width: 90%;
+    height: 40px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    font-family: Outfit;
+font-size: 18px;
+font-weight: 500;
+line-height: 30.24px;
+}
+.land1right>select{
+
+}
+.land1right>div{
+    background-color: #FFFFFF;
+    color: black;
+    border-radius: 5px;
+    font-family: Outfit;
+font-size: 24px;
+font-weight: 500;
+line-height: 30.24px;
+text-align: center;
+
+
+}
+.land1right>input::placeholder{
+    font-family: Outfit;
+font-size: 18px;
+font-weight: 500;
+line-height: 30.24px;
+
+color: #FFFFFF;
+
+}
+.land1right>input:focus,.land1right>select:focus{
+    outline: none;
+}
+.land1right>input[type=submit]{
+    background-color: #1E31FB;
+    border: none;
+}
+.land1right>input[type=submit]:hover{
+    background-color: #626fff;
+}
+
+
+.land1iconcon{
+    height: 20%;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2% ;
+}
+.land1iconleft{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.land1iconright{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.land1iconright img{
+    padding: 4px;
+    border-radius: 50%;
+
+    border: 2px dotted #E1FF00;display: block;
+}
+.land1txt{
+   color:#E1FF00 ;
+   font-family: Outfit;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30.24px;
+    text-align: center;
+    padding: 3px 5px;
+
+}
+.land1num{
+    font-family: Outfit;
+font-size: 32px;
+font-weight: 700;
+line-height: 40.32px;
+text-align: center;
+background-color: #7C1109;
+color: white;
+padding: 2px;
+margin-top: 5px;
+}
+
+/* --------------------- */
+
+.land2main{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+.land2title{
+    font-family: Outfit;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60.48px;
+    text-align: center;
+    color: black;
+
+}
+.land2title span{
+    color: #FF5900;
+}
+.land2cardcon{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.landcard{
+    width: 28%;
+    background-color: #6A0D06;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 290px;
+}
+.land2txt{
+    width: 100%;
+    background-color: #EE7B3D;
+    color: white;
+    height: 78px;
+    margin-top: 30px;
+    font-family: Outfit;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40.32px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.land2num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex: 1;
+    font-family: Outfit;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80.64px;
+    text-align: center;
+
+}
+.land2main::after{
+    content: "";
+    background:url('./../assets/land/land2back.png') ;
+    /* background: #1E31FB; */
+    position: absolute;
+   top:-150px;
+   background-size:cover ;
+   left: -170px;
+    width: 300px;
+    height:600px ;
+    
+    
+  
+   
+    
+ 
+    transform: rotate(70deg);
+    transform-origin: center;
+}
+.land2main::before{
+    content: "";
+    background:url('./../assets/land/land2back.png') ;
+    /* background: #1E31FB; */
+    position: absolute;
+   top:-100px;
+   background-size:cover ;
+   right: -130px;
+    width: 300px;
+    height:600px ;
+   
+    
+  
+   
+    
+ 
+    transform: rotate(290deg);
+    transform-origin: center;
+}
+
+/* --------------------- */
+.land3testmain{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.land3title{
+    font-family: Outfit;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60.48px;
+    text-align: center;
+    color: black;
+
+}
+.land3title span{
+    color: #FF5900;
+}
+.landfeedcon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.feedcard{
+    width: 30%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 38px 0px #00000040;
+    border-radius: 9px;
+    
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.land3feedimg{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.land3feedimg img{
+    height: 40px;
+    width: 40px;
+
+}
+.feedcard h1{
+    font-family: Outfit;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40.32px;
+    text-align: center;
+    color: #7C1109;
+    margin: 20px auto;
+
+
+}
+.land3feedbtn{
+    margin: 0 auto ;
+    margin-bottom: -10px;
+    padding: 6px 40px;
+    font-family: Outfit;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40.32px;
+    text-align: center;
+    color: white;
+    background-color: #6A0D06;
+    border-radius: 6px;
+
+}
+.land3wriereview{
+  
+    margin: 40px auto;
+    text-align: center;
+
+}
+.land3wriereview button{
+    font-family: Outfit;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    background-color: #F06D27;
+    border-radius: 8px;
+   padding: 7px 30px;
+    
+    
+}
+.land4main{
+    padding: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.land4title{
+    font-family: Outfit;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60.48px;
+    text-align: center;
+    color: black;
+
+}
+.land4title span{
+    color: #FF5900;
+}
+.land4titlesub{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 100px 0;
+
+   
+}
+.land4titlesub p{
+    color: #7C1109;
+    font-family: Outfit;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 41px;
+    text-align: left;
+
+}
+.land4titlesub h1{
+    font-family: Playfair Display;
+    font-size: 128px;
+    font-weight: 600;
+    
+    margin: 10px;
+    text-align: left;
+    color: #4B00B4;
+
+}
+.land4imagecon{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+    justify-content: space-between;
+}
+.land4imagecon div{
+    border-radius: 10px;
+    
+    
+   
+}
+.land4imagecon div h1{
+    color: #FFFFFF;
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: 0.12em;
+    text-align: center;
+    width: 80%;
+
+}
+.l4left{
+    width: 23%;
+    background-color: red;
+    background:url('./../assets/land/l4left.png') ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+}
+.l4right{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.l4rup{
+    height: 48%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.lrup1{
+    height: 100%;
+    width: 49%;
+    
+    background:url('./../assets/land/l4rup1.png') ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lrup2{
+    height: 100%;
+    width: 49%;
+    background:url('./../assets/land/l4rup2.png') ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.l4rdown{
+    height: 48%;
+    width: 100%;
+   background: url('./../assets/land/l4rdown.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------------------- */
+.land5main{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+}
+.land5main >p{
+    font-family: Outfit;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 40.36px;
+    text-align: center;
+    width: 80%;
+    margin: 8vh auto;
+
+}
+.land5con{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-bottom: 3vh;
+}
+.land5cardmain{
+    width: 33.33%;
+    padding: 1vh;
+    height: 1;
+
+}
+.land5card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #F06D27;
+}
+.l5cardimg{
+    
+    background-color: #7C1109;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+    width: 100%;
+    border-radius: 10px;
+    height: 60%;
+    padding: 10px;
+}
+.l5cardimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+ 
+    
+}
+.land5card p{
+   
+    font-family: Outfit;
+    font-size: 30px;
+    font-weight: 600;
+    
+    text-align: center;
+
+}
+.l5btn{
+    font-family: Outfit;
+    font-size: 27px;
+    font-weight: 600;
+    background-color: #7C1109;
+    text-align: center;
+    margin: 0 auto;
+    padding: 8px 30px;
+    border-radius: 3px;
+    margin-bottom:-5px ;
+
+
+}
+/* --------------- */
+.land6main{
+    width: 100%;
+    text-align: center;
+}
+.land6main img{
+    margin: 8vh auto;
+    width: 80%;
+    
+}
+
+/* ------------ */
+.land7utubecon{
+    width:100%;
+    height: 80vh;
+    text-align: center;
+    margin: 2vh 0;
+}
+.land7utubecon iframe{
+    border-radius: 5px;
+}
+ /* ----------------- */
+.land8main{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.l8con{
+    margin: 10vh auto;
+    width: 90%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.l8con div{
+   
+   justify-content: space-between;
+}
+.l8con div img{
+    width: 100%;
+    height: 100%;
+}
+.l81,.l84{
+    
+    width: 19%;
+    height: 100%;
+    
+}
+.l82,.l83{
+    display: flex;
+    flex-direction: column;
+    width: 29%;
+    height: 100%;
+}
+.l82up,.l82down,.l83up,.l83down{
+    height: 49%;
+    width: 100%;
+    
+}
+.l82down,.l83up{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.l82left,.l83left,.l82right,.l83right{
+        width: 49%;
+        height: 100%;
+}
+
+
+.land9main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 2vh 2vw;
+}
+.l9con{
+    width: 40%;
+    height: 70vh;
+    border: 2px solid black;
+    margin: 6vh auto;
+
+}
+
+@media (max-width: 768px){
+
+.land1right{
+    display: none;
+}
+.land1textcon{
+    justify-content: center;
+}
+.land1left{
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+}
+.land1left p{
+    font-size: 120%;
+    line-height: 30px;
+}
+.land1iconleft{
+    flex-direction: column;
+}
+.land1iconcon{
+    height: auto;
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
+.land1txt{
+   color:#E1FF00 ;
+   font-family: Outfit;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20.24px;
+    text-align: center;
+    padding: 3px 5px;
+
+}
+.land1num{
+    font-family: Outfit;
+font-size: 12px;
+font-weight: 700;
+line-height: 20.32px;
+text-align: center;
+background-color: #7C1109;
+color: white;
+padding: 2px;
+margin-top: 5px;
+}
+/* ------------ */
+
+.land2main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+.land2title{
+    font-family: Outfit;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 60.48px;
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+
+}
+.land2title span{
+    color: #FF5900;
+}
+.land2cardcon{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    justify-content: space-evenly;
+    gap: 20px;
+
+}
+.landcard{
+    width: 80%;
+    background-color: #6A0D06;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 180px;
+}
+.land2txt{
+    width: 100%;
+    background-color: #EE7B3D;
+    color: white;
+    height: 78px;
+    margin-top: 30px;
+    font-family: Outfit;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40.32px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.land2num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex: 1;
+    font-family: Outfit;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 80.64px;
+    text-align: center;
+
+}
+.land2main::after{
+    content: "";
+    background:url('./../assets/land/land2back.png') ;
+    /* background: #1E31FB; */
+    position: absolute;
+   top:-55px;
+   background-size:cover ;
+   left: -40px;
+    width: 250px;
+    height:140px ;
+  
+    
+  
+   
+    
+ 
+    transform: rotate(110deg);
+    transform-origin: center;
+}
+.land2main::before{
+    content: "";
+    background:url('./../assets/land/land2back.png') ;
+    /* background: #1E31FB; */
+    position: absolute;
+   top:-100px;
+   background-size:cover ;
+   right: -130px;
+    width: 300px;
+    height:600px ;
+    z-index: -2;
+    
+  
+   
+    
+ 
+    transform: rotate(290deg);
+    transform-origin: center;
+}
+/* ------------- */
+/* land3 */
+.land3testmain{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 30px auto;
+
+}
+.land3title{
+    font-family: Outfit;
+    font-size: 28pxpx;
+    font-weight: 700;
+    line-height: 60.48px;
+    text-align: center;
+    color: black;
+    margin: 30px auto;
+
+}
+.land3title span{
+    color: #FF5900;
+}
+.landfeedcon{
+    display: flex;
+  
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-evenly;
+    gap: 40px;
+
+
+}
+.feedcard{
+    width: 80%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 38px 0px #00000040;
+    border-radius: 9px;
+    
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.land3feedimg{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.land3feedimg img{
+    height: 40px;
+    width: 40px;
+
+}
+.feedcard h1{
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40.32px;
+    text-align: center;
+    color: #7C1109;
+    margin: 20px auto;
+
+
+}
+.land3feedbtn{
+    margin: 0 auto ;
+    margin-bottom: -10px;
+    padding: 6px 40px;
+    font-family: Outfit;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40.32px;
+    text-align: center;
+    color: white;
+    background-color: #6A0D06;
+    border-radius: 6px;
+
+}
+.land3wriereview{
+  
+    margin: 40px auto;
+    text-align: center;
+
+}
+.land3wriereview button{
+    font-family: Outfit;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    background-color: #F06D27;
+    border-radius: 8px;
+   padding: 7px 30px;
+    
+    
+}
+
+/* --------------- */
+.land4title{
+    font-size: 24px;
+}
+.land4titlesub{
+    gap: 5px;
+    margin: 30px 0;
+}
+.land4titlesub p{
+    color: #7C1109;
+    font-family: Outfit;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+
+}
+.land4titlesub h1{
+    font-family: Playfair Display;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+    color: #4B00B4;
+    margin: 0;
+
+}
+.land4imagecon{
+    height: 300px;
+}
+.land4imagecon div h1{
+    font-size: 15px;
+    line-height: 18px;
+}
+.land4imagecon div{
+    background-size: cover;
+}
+.l4left{
+    width: 40%;
+
+}
+.l4right{
+    width: 59%;
+}
+
+/* --------- */
+.land5main >p{
+    font-size: 15px;
+    line-height: 20.36px;
+    margin:4vh auto ;
+}
+
+.land5con{
+    flex-direction: column;
+
+}
+.land5cardmain{
+    width: 70%;
+}
+.land5card{
+    height: 200px;
+}
+.l5btn{
+    font-family: Outfit;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #7C1109;
+    text-align: center;
+    margin: 0 auto;
+    padding: 8px 30px;
+    border-radius: 4px;
+    margin-bottom:-5px ;
+
+
+}
+.land5card p{
+    font-size: 15px;
+}
+.land7utubecon{
+    width:100%;
+    height: 30vh;
+    text-align: center;
+    margin: 2vh 0;
+}
+.land8main{
+    margin-bottom: 20px;
+}
+.l8con{
+    flex-wrap: wrap;
+    height:auto;
+    
+}
+.l8con > div{
+    height: 30vh;
+    margin-bottom: 5px;
+}
+.l81,.l84{
+    width: 40%;
+}
+.l82,.l83{
+    width: 59.5%;
+}
+.l9con{
+    width: 70%;
+    height: 40vh;
+    border: 2px solid black;
+    margin: 6vh auto;
+
+}
+}

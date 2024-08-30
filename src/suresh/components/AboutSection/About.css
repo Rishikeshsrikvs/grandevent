@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+.about {
+  width: 100%;
+}
+.about .container {
+  width: 100%;
+  margin: 0 auto;
+}
+.about .container .hero{
+  text-align: center;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-family: "Outfit";
+  font-size: 34px;
+}
+
+.about .container .heading {
+  max-width: 100%;
+  margin: 0 auto;
+  height: 200px;
+  text-align: center;
+  font-family: "Outfit";
+  background-image: url(../assets/design.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container .heading h1 {
+  font-size: 48px;
+  color: #000;
+  padding-top: 60px;
+}
+.container .heading h2 {
+  font-size: 40px;
+  color: #ee7b3d;
+}
+.container .about-serve {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 2.4rem;
+}
+.container .about-serve .image-container1 {
+  width: 515px;
+  position: relative;
+}
+.container .about-serve .food-serve {
+  width: 341px;
+}
+.container .about-serve .food-serve img {
+  width: 100%;
+}
+.container .about-serve .bala-img {
+  width: 341px;
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+}
+.container .about-serve .bala-img img {
+  width: 100%;
+}
+.container .about-serve .about-serve-content {
+  width: 740px;
+  height: 490px;
+  font-family: "Outfit";
+}
+.container .about-serve .about-serve-content p {
+  margin-top: 20px;
+  line-height: 2rem;
+  font-size: 24px;
+  letter-spacing: 0.9px;
+  font-family: "Outfit";
+  font-weight: 400;
+}
+.about-details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #ee7b3d;
+  padding-top: 30px;
+  margin-top: 60px;
+}
+.about-details .about-details-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(../assets/design.png);
+  background-repeat: repeat;
+  flex-wrap: wrap;
+}
+.about-details .about-details-content p {
+  width: 680px;
+  line-height: 2rem;
+  font-size: 24px;
+  letter-spacing: 0.9px;
+  font-weight: 500;
+  font-family: "Outfit";
+  color: #fff;
+  padding-bottom: 20px;
+  padding-left: 28px;
+}
+.about-details .about-details-content .poster {
+  width: 420px;
+  height: 246px;
+  border-radius: 15px;
+  margin-right: 8rem;
+}
+
+@media screen and (max-width: 378px) {
+  .about {
+    width: 100%;
+  }
+  .about .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .about .container .hero{
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    margin-top: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: "Outfit";
+    font-size: 14px;
+  }
+  .container .heading h1 {
+    font-size: 15px;
+    color: #000;
+    padding-bottom: 10px;
+  }
+  .container .heading h2 {
+    font-size: 15px;
+    color: #ee7b3d;
+  }
+  .about .container .heading {
+    max-width: 100%;
+    margin: 0 auto;
+    height: 200px;
+    text-align: center;
+    font-family: "Outfit";
+    background-image: url(../assets/design2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+  .container .about-serve .about-serve-content {
+    width: 358px;
+    height: 228px;
+    font-family: "Outfit";
+  }
+  .container .about-serve .about-serve-content p {
+    width: 338px;
+    height: 228px;
+    padding: 0 15px;
+    font-family: "Outfit";
+  }
+
+  .about-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-details .about-details-content {
+    width: 358px;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    background-size: auto;
+    flex-wrap: wrap;
+  }
+  .about-details .about-details-content p {
+    width: 368px;
+    line-height: 1rem;
+    font-size: 10px;
+    text-align: center;
+    padding-left: 0;
+    padding: 10px 15px;
+  }
+  .about-details .about-details-content .poster {
+    width: 280px;
+    height: 210px;
+    border-radius: 15px;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 1210px) {
+  .about {
+    width: 100%;
+  }
+  .about .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .about .container .heading {
+    max-width: 100%;
+    margin: 0 auto;
+    height: 200px;
+    text-align: center;
+    font-family: "Outfit";
+    background-image: url(../assets/design2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+  .container .heading h1 {
+    font-size: 15px;
+    color: #000;
+    padding-bottom: 10px;
+  }
+  .container .heading h2 {
+    font-size: 15px;
+    color: #ee7b3d;
+  }
+  .container .about-serve .image-container1 {
+    width: 350px;
+    position: relative;
+    right: 30px;
+  }
+  .container .about-serve .food-serve {
+    width: 0;
+  }
+
+  .container .about-serve .bala-img {
+    width: 226px;
+    height: 245px;
+    position: relative;
+  }
+  .container .about-serve .bala-img img {
+    width: 100%;
+  }
+  .container .about-serve .about-serve-content {
+    width: 368px;
+    height: 228px;
+    padding: 10px 15px;
+    font-family: "Outfit";
+  }
+  .container .about-serve .about-serve-content p {
+    margin-top: 20px;
+    line-height: 1rem;
+    text-align: center;
+    font-size: 9px;
+  }
+
+  .about-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+  }
+
+  .about-details .about-details-content {
+    width: 368px;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    background-size: auto;
+    flex-wrap: wrap;
+  }
+  .about-details .about-details-content p {
+    width: 358px;
+    line-height: 1rem;
+    font-size: 10px;
+    text-align: center;
+    padding-left: 0;
+    padding: 10px 25px;
+  }
+  .about-details .about-details-content .poster {
+    width: 280px;
+    height: 210px;
+    border-radius: 15px;
+    margin-right: 0;
+  }
+}

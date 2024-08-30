@@ -1,0 +1,130 @@
+.option {
+  width: 100%;
+  margin: 10rem 0;
+  position: relative;
+}
+.option .kutty1,
+.option .kutty2,
+.option .kutty3,
+.option .kutty4 {
+  position: absolute;
+}
+.option .kutty1 {
+  width: 20px;
+  top: -8rem;
+}
+.option .kutty1 img {
+  width: 100%;
+}
+.option .kutty2 {
+  width: 65px;
+  top: -7rem;
+  left: 50px;
+}
+.option .kutty2 img {
+  width: 100%;
+}
+.option .kutty3 {
+  width: 35px;
+  top: -2rem;
+  left: 27px;
+}
+.option .kutty3 img {
+  width: 100%;
+}
+.option .kutty4 {
+  width: 200px;
+  bottom: -8rem;
+  right: 2px;
+}
+.option .kutty4 img {
+  width: 100%;
+}
+.option .flex-box {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.option .flex-box .color1 {
+  background: #be7607;
+}
+.option .flex-box .color2 {
+  background: #097c28;
+}
+.option .flex-box .color3 {
+  background: #4b00b4;
+}
+.option .flex-box .box {
+  width: 350px;
+  height: 452px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+.box-item {
+  width: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+.box-item h3 {
+  width: 280px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Outfit";
+  font-weight: 600;
+  color: #fff;
+}
+.box-item p {
+  width: 280px;
+  height: 95px;
+  font-size: 12px;
+  text-align: center;
+  font-family: "Outfit";
+  font-weight: 400;
+  color: #fff;
+}
+.box-item .image {
+  width: 280px;
+}
+.box-item .image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .option .flex-box .box {
+    width: 290px;
+    height: 402px;
+    margin: 20px auto;
+  }
+
+  .box-item h3 {
+    font-size: 18px;
+  }
+  .box-item p {
+    padding: 0 15px;
+    font-size: 11px;
+  }
+  .box-item .image {
+    width: 235px;
+  }
+  .option .kutty4 {
+    width: 120px;
+    bottom: -5rem;
+    right: 2px;
+  }
+  .option .kutty4 img {
+    width: 100%;
+  }
+}

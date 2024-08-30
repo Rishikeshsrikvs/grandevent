@@ -1,0 +1,208 @@
+.types {
+  width: 100%;
+  margin: 1rem auto;
+}
+.types .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 12rem 0;
+  position: relative;
+  padding: 20px;
+}
+
+.types .container .text {
+  width: 630px;
+}
+.types .container .text h3 {
+  height: 65px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Outfit";
+}
+.types .container .text p {
+  font-size: 24px;
+  font-family: "Outfit";
+  line-height: 34px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.types .container .image-section {
+  width: 570px;
+}
+.types .container .image-section img {
+  width: 100%;
+}
+
+/* <-------ornaments--------> */
+.mobviewornament1,
+.mobviewornament2,
+.mobviewornament3,
+.mobviewornament4,
+.mobviewornament5,
+.mobviewornament8,
+.mobviewornament9 {
+  display: none;
+}
+.ornament1,
+.ornament2,
+.ornament3,
+.ornament4,
+.ornament5,
+.ornament6,
+.ornament7 {
+  position: absolute;
+}
+
+.types .container .ornament1 {
+  left: 0;
+  top: -2rem;
+}
+.types .container .ornament2 {
+  left: 0;
+  bottom: -2rem;
+}
+.types .container .ornament3 {
+  right: 14rem;
+  bottom: -6.5rem;
+  z-index: -5;
+}
+.types .container .ornament4 {
+  right: 0rem;
+  top: -10rem;
+  z-index: -5;
+}
+.types .container .ornament5 {
+  top: 0.4rem;
+  left: 42.8rem;
+  z-index: -5;
+}
+.types .container .ornament6 {
+  top: -1.5rem;
+  left: 33rem;
+  z-index: -5;
+}
+.types .container .ornament7 {
+  left: 1.8rem;
+  bottom: -1.5rem;
+  z-index: -5;
+}
+
+/* <-------ornaments--------> */
+
+@media screen and (max-width: 768px) {
+  .types {
+    width: 95%;
+    margin: 0rem auto;
+  }
+  .types .container {
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 30px;
+    margin: 6rem 0;
+    padding: 0px;
+
+    position: relative;
+  }
+  .types .container:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .types .container .image-section {
+    width: 255px;
+    margin: 0 auto;
+  }
+  .types .container .image-section img {
+    width: 100%;
+  }
+  .types .container .text {
+    width: 276px;
+  }
+  
+  .types .container .text h3 {
+    height: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: "Outfit", serif;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .types .container .text p {
+    font-size: 12px;
+    font-family: "Outfit";
+    line-height: 16px;
+    font-weight: 400;
+  }
+  .ornament1,
+  .ornament2,
+  .ornament3,
+  .ornament4,
+  .ornament5,
+  .ornament6,
+  .ornament7 {
+    display: none;
+  }
+  .mobviewornament1,
+  .mobviewornament2,
+  .mobviewornament3,
+  .mobviewornament4,
+  .mobviewornament5, 
+  .mobviewornament8, 
+  .mobviewornament9 {
+    display: block;
+    position: absolute;
+  }
+
+  .mobviewornament1{
+    left: -10px;
+    top: -3.3rem;
+  }
+  .mobviewornament2{
+    left: 1rem;
+    top: 0;
+    
+  }
+  .mobviewornament3{
+    left: -1.5rem;
+    bottom:  -55px;
+  }
+  .mobviewornament4{
+    width: 85px;
+    right: 8rem;
+    top: 4rem;
+    z-index: -5;
+  }
+  .mobviewornament4 img{
+    width: 100%;
+  }
+  .mobviewornament5{
+    width: 95px;
+    right: -1.11rem;
+    top: -5.9rem;
+    z-index: -5;
+  }
+  .mobviewornament5 img{
+    width: 100%;
+  }
+  .mobviewornament8{
+    width: 80px;
+    top: -1.4rem;
+    right: 1.8rem;
+    z-index: -5;
+  }
+  .mobviewornament8 img{
+    width: 100%;
+  }
+  .mobviewornament9{
+    width: 80px;
+    left: 1.8rem;
+    bottom: 8.4rem;
+    z-index: -5;
+  }
+  .mobviewornament9 img{
+    width: 100%;
+  }
+}

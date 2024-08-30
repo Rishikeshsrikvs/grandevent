@@ -1,0 +1,80 @@
+
+
+.galarycontainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100vh;
+    background-color:  #FFFAF6;
+    ;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .galarycontainer h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .reviewform {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .formgroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formgroup label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .formgroup input,
+  .formgroup textarea {
+    padding: 15px;
+    border: 1px solid #e2dddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .formgroup input[type="number"] {
+    max-width: 90px;
+  }
+  
+  .formgroup textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #881400;
+    color: #ffffff;
+    border: none;
+    height: 100%;
+    width: 130px;
+    margin:0 auto;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .button[type="submit"]{
+    text-align: center;
+  }
+
+  
+  button[type="submit"]:hover {
+    background-color: #881400;
+    display: flex;
+   
+  }
+  

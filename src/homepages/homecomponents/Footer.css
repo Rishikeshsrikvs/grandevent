@@ -1,0 +1,163 @@
+.footerparent{
+    background-color: #7C1109;
+    height: 500px;
+    width: 100%;
+   
+    flex-direction: column;
+    color: white;
+    box-sizing: border-box;
+    
+}
+.footerparent p,.footerparent a{
+    font-size: 24px;
+}
+.footmain{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: 100%;height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%  5%;
+
+}
+.footleft{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.footleftlogo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footleftlogo img{
+    width: 290px;
+}
+.footleftlogo p{
+    font-size: 20px;
+}
+.footicon{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footiconcon{
+    display: flex;
+    gap: 10%;
+    align-items: center;
+}
+.footcenter{
+    width: 25%;
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+}
+.footright{
+    margin-top: 2%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap:6%
+}
+.footsub{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6A0D06;
+    padding: 5px;
+}
+.footsub p{
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .footerparent{
+        overflow: hidden;
+    }
+    .footerparent{
+        background-color: #7C1109;
+        height: auto;
+        width: 100%;
+       
+        flex-direction: column;
+        color: white;
+    
+        
+    }
+    .footmain{
+        flex-wrap: wrap;
+    }
+    .footmain{
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 9px  4%;
+        
+   
+    
+    }
+    .footmain h1{
+        font-size: 20px;
+    }
+    .footleft{
+        width: 100%;
+        flex-direction: row;
+        padding: 3% 0;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+    .footleftlogo{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 68%;
+       
+    }
+    .footleftlogo img{
+        width: 162px;
+    }
+    .footicon{
+        width: 32%
+    }
+    .footiconcon{
+        gap: 20px;
+
+    }
+    .footiconcon img{
+        width: 16px;
+    }
+    .footcenter{
+        width: 30%;
+       
+    }
+    .footright{
+        width: 60%;
+        gap: 6px;
+        padding: 0 2%;
+    }
+    .footerparent p,.footerparent a{
+        font-size: 13px;
+    }
+    .footsub p{
+        font-size: 13px;
+        color: #FFFFFF;
+    }
+    .footsub{
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
+}
