@@ -3,7 +3,8 @@ import pic1 from "../assets/pic1.png";
 import pic2 from "../assets/Baala.png";
 import foodposter from '../assets/food.png'
 import './About.css'
-import Registr from "../../../homepages/homecomponents/Registr";
+import lefttop from '../assets/design4.png'
+
 const About = () => {
   return (
     <>
@@ -13,7 +14,11 @@ const About = () => {
             <h1>ABOUT US</h1>
           </div>
 
-          <div className="heading">
+          <div className="top-left">
+            <img src={lefttop} alt="" />   
+          </div>
+
+          <div className="">
             <h1>Best Caterers in Chennai</h1>
             <h2>Grand Events A to Z Marriage Catering Services</h2>
           </div>
@@ -66,7 +71,6 @@ const About = () => {
               </div>
             </div>
           </div>
-          <Registr/>
         </div>
       </div>
     </>

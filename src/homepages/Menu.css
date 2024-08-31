@@ -1,0 +1,237 @@
+.menuparent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    background-color: #FFFAF6;
+}
+.menuhead{
+    text-align: center;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./../assets/galleryimage/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: "Outfit";
+    font-size: 32px;
+}
+.menumain{
+    width: 100%;
+    position: relative;
+    
+}
+.menusub{
+    width: 100%;
+   position: relative;
+   z-index:34;
+    background: transparent;
+    
+}
+.menuback1{
+    position: absolute;
+    width: 20vw;
+    z-index:3;
+    top: -10vh;
+    left: 0;
+    
+}
+
+.menuback2{
+    position: absolute;
+    width: 20vw;
+    z-index:3;
+    top: -10vh;
+    right: 0;
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+    
+}
+.menusub > h1{
+    font-family: Playfair Display;
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 85.31px;
+    text-align: center;
+
+}
+.menu1container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    gap: 4vh;
+}
+.manu1up{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+
+}
+.mn1,.mn2,.mn3,.mn4{
+    width: 24.5%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    justify-content: space-evenly;
+}
+.manu1up >div img{
+    width: 100%;
+    height: 100%;
+    
+   
+}
+.manu1up >div >h1{
+
+}
+.mn1up,.mn2down{
+   height: 64%;
+   width: 95%;
+  
+}
+.mn2up,.mn1down{
+    height: 32%;
+    width: 95%;
+    justify-content:space-evenly ;
+   
+    
+}
+.mn2,.mn3{
+    justify-content: space-between;
+}
+.mn3{
+    
+}
+.manu1up >div >button{
+    background-color: #6A0D06;
+    font-family: Outfit;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.2px;
+    text-align: center;
+    padding: 4px 10px;
+    color: white;
+    border-radius: 3px;
+
+}
+
+
+/* --------------------- */
+.menu2container{
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.manu2card{
+    height: 384px;
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 4px;
+    margin-bottom: 8vh;
+    box-shadow: 0px 0px 10px black;
+}
+.mnimg{
+    height: 60%;
+    width: 100%;
+    padding: 2%;
+}
+.mnimg img{
+    width: 100%;
+    height: 100%;
+}
+.mnbtn{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.mnbtn button{
+    font-family: Outfit;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 4px 30px;
+    border-radius: 5px;
+    line-height: 30.24px;
+    text-align: center;
+    color: #FFB30E;
+    background-color: #6A0D06;
+}
+@media (max-width: 768px){
+    .manu1up{
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+     .mn1,.mn2,.mn3{
+        width: 32.5%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 4px;
+        justify-content: space-evenly;
+    }
+    .mn4{
+        width: 100%;
+        height: 150px;
+    }
+
+    /* ------------------ */
+    .menu2container{
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .manu2card{
+        height: 200px;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+        border-radius: 4px;
+        margin-bottom: 8vh;
+        padding: 5px;
+        box-shadow: 0px 0px 10px black;
+    }.mnbtn{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .mnbtn button{
+        font-family: Outfit;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 3px 20px;
+        border-radius: 5px;
+        line-height: 20.24px;
+        text-align: center;
+        color: #FFB30E;
+        background-color: #6A0D06;
+    }
+}

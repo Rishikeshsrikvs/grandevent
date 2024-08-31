@@ -2,10 +2,21 @@
 
 .about {
   width: 100%;
+  height: 200vh;
 }
 .about .container {
   width: 100%;
   margin: 0 auto;
+  position: relative;
+}
+.about .container .top-left{
+  width: 380px;
+  position: absolute;
+  left: 0px;
+  z-index: -10;
+}
+.about .container .top-left img{
+  width: 100%;
 }
 .about .container .hero{
   text-align: center;
@@ -23,22 +34,22 @@
   font-size: 34px;
 }
 
-.about .container .heading {
-  max-width: 100%;
+.about .container .headingab {
+  flex-direction: column;
   margin: 0 auto;
-  height: 200px;
+  height: 300px;
   text-align: center;
   font-family: "Outfit";
-  background-image: url(../assets/design.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  /* background-image: url(../assets/design.png); */
+  /* background-repeat: no-repeat;
+  background-size: 40%; */
 }
-.container .heading h1 {
+.container .headingab h1 {
   font-size: 48px;
   color: #000;
-  padding-top: 60px;
+  
 }
-.container .heading h2 {
+.container .headingab h2 {
   font-size: 40px;
   color: #ee7b3d;
 }
@@ -64,7 +75,7 @@
   width: 341px;
   position: absolute;
   left: 25%;
-  bottom: 0;
+  bottom: -6.5px;
 }
 .container .about-serve .bala-img img {
   width: 100%;
@@ -143,7 +154,7 @@
     font-family: "Outfit";
     font-size: 14px;
   }
-  .container .heading h1 {
+  .container .headingab h1 {
     font-size: 15px;
     color: #000;
     padding-bottom: 10px;
@@ -152,7 +163,7 @@
     font-size: 15px;
     color: #ee7b3d;
   }
-  .about .container .heading {
+  .about .container .headingab {
     max-width: 100%;
     margin: 0 auto;
     height: 200px;
@@ -213,7 +224,7 @@
     width: 100%;
     margin: 0 auto;
   }
-  .about .container .heading {
+  .about .container .headingab {
     max-width: 100%;
     margin: 0 auto;
     height: 200px;
@@ -223,12 +234,12 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
-  .container .heading h1 {
+  .container .headingab h1 {
     font-size: 15px;
     color: #000;
     padding-bottom: 10px;
   }
-  .container .heading h2 {
+  .container .headingab h2 {
     font-size: 15px;
     color: #ee7b3d;
   }

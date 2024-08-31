@@ -1,10 +1,13 @@
-
+.modal-background{
+  position: relative;
+}
 
 .galarycontainer {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     height: 100vh;
+    
     background-color:  #FFFAF6;
     ;
     border-radius: 8px;

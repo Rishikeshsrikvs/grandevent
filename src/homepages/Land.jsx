@@ -1,4 +1,5 @@
 import React from 'react'
+import  { useState } from 'react';
 import './Land.css';
 import { useNavigate } from 'react-router-dom';
 import { Link, Navigate } from 'react-router-dom';
@@ -23,13 +24,19 @@ import l22 from './../assets/land/landsub/l22.png';
 import l31 from './../assets/land/landsub/l31.png';
 import l32 from './../assets/land/landsub/l32.png';
 
-
+import Registr from './homecomponents/Registr';
 
 
 import Sendmessage from './homecomponents/Sendmessage';
 const Land = () => {
 
+  
   const navigate = useNavigate();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
   return (
     <div className='landparent'>
       <div className="land1main">
@@ -72,11 +79,11 @@ const Land = () => {
           <h1 className='land2title'>OUR <span>MILESTONE</span></h1>
           <div className="land2cardcon">
             <div className="landcard">
-              <h1 className='land2txt'>EVEWNTS</h1>
+              <h1 className='land2txt'>EVENTS</h1>
               <h1 className='land2num'>123+</h1>
             </div>
             <div className="landcard">
-              <h1 className='land2txt'>EVEWNTS</h1>
+              <h1 className='land2txt'>EVENTS</h1>
               <h1 className='land2num'>123+</h1>
             </div>
             <div className="landcard">
@@ -119,7 +126,8 @@ const Land = () => {
 
           </div>
         </div>
-        <div className="land3wriereview"><button>Write review</button></div>
+        {isModalOpen && <Sendmessage toggleModal={toggleModal} />}
+        <div className="land3wriereview"><button  onClick={toggleModal}>Write review</button></div>
       </div>
       <div className="land4main">
           <h1 className='land4title'>OUR <span>SERVICES</span></h1>
@@ -134,7 +142,7 @@ const Land = () => {
             <div className="l4right">
               <div className="l4rup">
                   <div className="lrup1" onClick={()=>(navigate('/Marriageservice'))}><h1>MARRIAGE SERVICES</h1></div>
-                  <div className="lrup1"><h1>MENU</h1></div>
+                  <div className="lrup1"  onClick={()=>(navigate('/Menu'))}><h1>MENU</h1></div>
               </div>
               <div className="l4rdown"  onClick={()=>(navigate('/Services'))}>
                 <h1>OUR SPEACIALITIES</h1>
@@ -216,9 +224,12 @@ const Land = () => {
       <div className="land9main">
         <h1 className='land4title'>REELS</h1>
         <div className="l9con"></div>
-
+        <div className="land3wriereview"><button>FOR MORE FEEDS</button></div>
       </div>
-      <div className="land3wriereview"><button>FOR MORE FEEDS</button></div>    </div>
+         
+      <Registr/>
+   </div>
+
   )
 }
 

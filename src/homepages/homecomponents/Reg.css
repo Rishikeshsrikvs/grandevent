@@ -11,11 +11,12 @@
     background-color: #7C1109;
   } */
   .registermainparent{
-    height: 95vh;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5vh auto;
   }
   .registparent{
     
@@ -43,8 +44,8 @@
   .registermaincontainer > h1{
     color: azure;
     text-align: center;
-   width: 50%;
-  font-size: 65px;
+   width: 80%;
+  font-size: 420%;
   font-style:normal;
   margin:20px 0;
   
@@ -72,8 +73,7 @@
     align-items: center;
   }
   
-  
-  form {
+.formsub {
     background-color: white;
     text-align: center;
   
@@ -89,21 +89,19 @@
    
   }
   
- 
-  form div {
+.formsub div {
     margin-bottom: 10px;
     text-align: left;
   
   }
   
-  form label {
+  .formsub label {
     display: block;
     font-size: 20px;
     margin-bottom: 5px;
     color: #333;
   }
-  
-  form input {
+.formsub input {
     width: 80%;
    padding: 10px;
     margin-bottom: 13px;
@@ -113,7 +111,7 @@
     box-sizing: border-box;
   }
   
-  form button {
+  .formsub button {
   
     padding: 10px 30px;
     background-color: #7C1109;
@@ -130,7 +128,7 @@
   .tetxarea{
   width: 80%;
     height: 150px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 38px, rgba(0, 0, 0, 0.22) 0px 0px 12px;
   border: none;
   height: 100px;
   border-radius: 5px;
@@ -141,7 +139,7 @@
     border: none;
     outline: none;
   }
-  form button:hover {
+  .formsub button:hover {
     background-color: #5a0c07;
   } 
   .formsubcontainer{
@@ -171,7 +169,7 @@
   .inputcon >div >input{
     width: 80%;
     border: none;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;;
   }
   .inputcon >div >input:focus{
     outline: none;
@@ -184,6 +182,9 @@
   }
 
   @media (max-width: 768px){
+    .registermainparent{
+      margin-top: 5vh;
+    }
     .registermaincontainer h1{
       font-size: 30px;width: 80%;
     }
@@ -197,7 +198,7 @@
       height: 10px;
       padding: 20px 0;
       
-      margin: 20px 0;line-height: 0;
+      margin: 20px 0;line-height: 20px;
 
     }
     .inputcon >div{

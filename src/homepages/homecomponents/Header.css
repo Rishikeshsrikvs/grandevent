@@ -169,13 +169,33 @@ li {
         display: flex; 
         max-height: 300px; /* Adjust based on content height */
         opacity: 1;
+        align-items: center;
     }
 
     .navul {
         flex-direction: column;
         gap: 10px;
     }
+    .navcar{
+       
+        width: 100%;
+    }
+    .navcar a{
+        margin: 1rem auto;
+        display: block;
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 400;
+  padding:  3px 15px;
+   width: unset;
+    
+    text-align: center;
+    border-radius: 9px;
+    white-space: nowrap;
+    color: black;
+    background: #FFFFFF;
 
+    }
     .navul li {
         width: 100%;
         text-align: center;

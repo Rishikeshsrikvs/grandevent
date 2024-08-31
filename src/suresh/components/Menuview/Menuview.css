@@ -1,0 +1,246 @@
+.menuview {
+  width: 100%;
+  margin: 3rem auto;
+  background: #fffaf6;
+}
+.menuview .menu-heading h1 {
+  font-size: 70px;
+  margin: 7rem auto;
+  font-family: "Outfit";
+  font-weight: 700;
+  margin-left: 2rem;
+}
+.menuview .menu-heading h1 i {
+    text-transform: capitalize;
+    font-family: "Playfair Display";
+    font-weight: 600;
+  }
+.container {
+  display: flex;
+  align-items: center;
+  background-color: #800000;
+  height: 90vh;
+  margin: 10rem auto;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.gallery {
+  width: 745px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.grid {
+  gap: 20px;
+  display: flex;
+  width: 100%;
+}
+.grid .menu-box {
+}
+.grid .menu-box img {
+  width: 100%;
+}
+.grid .menu-box .image1 {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.grid .menu-box .image2 {
+  width: 300px;
+  height: 150px;
+  border-radius: 8px;
+}
+.grid .menu-box .image3 {
+  width: 260px;
+  height: 150px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.grid .menu-box .image1 img {
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 40%;
+  background-color: #800000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  gap: 25px;
+}
+
+label {
+  width: 110px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Outfit";
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  margin-top: 25px;
+  padding: 10px;
+  font-size: 18px;
+  color: #000000;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .gallery {
+       display: none;
+      }
+      .menuview .menu-heading h1 {
+        font-size: 34px;
+        margin: 5rem auto;
+        margin-left: 2rem;
+      }
+     
+      .container {
+        height: 50vh;
+        margin: 3rem auto;
+        flex-wrap: wrap;
+        border-radius: 10px;
+      }
+      .form-container {
+        width: 285px;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 265px;
+        margin: 0 auto;
+        gap: 15px;
+      }
+    
+      label {
+        width: 110px;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    
+      input {
+        width: 265px;
+        height: 30px;
+        font-size: 16px;
+      }
+}
+@media (max-width: 768px) {
+    .gallery {
+       display: none;
+      }
+      .menuview .menu-heading h1 {
+        font-size: 32px;
+        margin: 4rem auto;
+        font-family: "Outfit";
+        font-weight: 700;
+        margin-left: 2rem;
+      }
+      
+      .container {
+        height: 60vh;
+        margin: 5rem auto;
+        flex-wrap: wrap;
+        width: 100%;
+        border-radius: 10px;
+      }
+      .form-container {
+        width: 485px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 385px;
+        
+      }
+    
+      label {
+        width: 180px;
+        font-size: 24px;
+        font-weight: 400;
+      }
+    
+      input {
+        padding: 10px;
+        width: 385px;
+        height: 45px;
+        font-size: 16px;
+      }
+    
+      
+}
+@media (max-width: 480px) {
+  .gallery {
+    display: none;
+  }
+  .menuview .menu-heading h1 {
+    font-size: 24px;
+    margin: 7rem auto;
+    font-family: "Outfit";
+    font-weight: 700;
+    margin-left: 2rem;
+  }
+  .menuview .menu-heading h1 i {
+    text-transform: capitalize;
+    font-family: "Playfair Display";
+    font-weight: 600;
+  }
+  .container {
+    height: 60vh;
+    margin: 5rem auto;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .form-container {
+    width: 285px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 265px;
+    margin: 0 auto;
+    gap: 15px;
+  }
+
+  label {
+    width: 110px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  input {
+    width: 265px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  button {
+    margin-top: 25px;
+    padding: 10px;
+    font-size: 12px;
+  }
+}

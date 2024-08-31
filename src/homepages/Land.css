@@ -161,9 +161,9 @@ color: #FFFFFF;
 }
 .land1num{
     font-family: Outfit;
-font-size: 32px;
+font-size: 26px;
 font-weight: 700;
-line-height: 40.32px;
+line-height: 30.32px;
 text-align: center;
 background-color: #7C1109;
 color: white;
@@ -428,9 +428,13 @@ margin-top: 5px;
 }
 .land4imagecon div{
     border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
     
     
    
+}
+.l4left:hover{
+    transform: scale(1.05);
 }
 .land4imagecon div h1{
     color: #FFFFFF;
@@ -663,6 +667,7 @@ margin-top: 5px;
     flex-direction: column;
     width: 100%;
     padding: 2vh 2vw;
+    margin-bottom: 5vh;
 }
 .l9con{
     width: 40%;

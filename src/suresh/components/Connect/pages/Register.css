@@ -1,0 +1,14 @@
+.register{
+    height: 100vh;
+    position: relative;
+}
+.right-bottom{
+    position: absolute;
+    width: 280px;
+    bottom: 0px;
+    right: 0;
+}
+.right-bottom img{
+    width: 100%;
+    
+}

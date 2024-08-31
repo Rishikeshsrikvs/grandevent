@@ -5,7 +5,7 @@ import page from "../assets/service4.png";
 import design3 from "../assets/design3.png";
 import "./Service.css";
 
-import Registr from "../../../homepages/homecomponents/Registr";
+
 const Service = () => {
   return (
     <>
@@ -99,7 +99,6 @@ const Service = () => {
             <img src="" className="flex" />
             <h3></h3>
           </div>
-          <Registr/>
         </div>
       </div>
     </>

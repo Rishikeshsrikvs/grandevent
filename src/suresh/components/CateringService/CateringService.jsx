@@ -5,8 +5,6 @@ import CateringTypes from "./pages/CateringTypes";
 import Types from "./pages/Types";
 import Assurance from "./pages/Assurance";
 
-import Registr from "../../../homepages/homecomponents/Registr";
-
 const CateringService = () => {
   return (
     <>
@@ -17,7 +15,7 @@ const CateringService = () => {
           <CateringTypes/>
           <Types/>
           <Assurance/>
-          <Registr/>
+          
       </div>
     </>
   );

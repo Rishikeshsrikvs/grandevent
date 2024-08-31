@@ -11,7 +11,7 @@ import pic9 from "../galleryimage/gallery9.png";
 import design from "../galleryimage/design.png";
 
 import "./Gallery.css"; // Import your CSS file
-import Registr from "../../../homepages/homecomponents/Registr";
+
 const images = [
   { src: pic1, alt: "BANANA LEAF SERVING METHOD" },
   { src: pic2, alt: "BUFFET SERVING METHOD" },
@@ -47,11 +47,8 @@ const Gallery = () => {
             ))}
           </div>
         </div>
-          
       </div>
-      <Registr/>
     </>
-
   );
 };
 
