@@ -1,19 +1,47 @@
-.modal-background{
-  position: relative;
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it's above all other content */
 }
 
 .galarycontainer {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    height: 100vh;
-    
-    background-color:  #FFFAF6;
-    ;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+  max-width: 600px;
+  width: 90%;
+  padding: 20px 5px;
+  background-color: #FFFAF6;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding: 2%;
   
+}
+
+  .galarycontainer > .xbtncon {
+    text-align: right;
+  
+   
+    padding-right: 10px;
+  }
+  .xbtncon >button{
+    text-align: right;
+    font-size: 200%;
+    color: red;
+    padding: 0%;
+    
+    background-color: transparent;
+    margin-top: 0%;
+  }
   .galarycontainer h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -24,17 +52,23 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 100%;
+   
+    justify-content: space-between;
   }
   
   .formgroup {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    
   }
   
   .formgroup label {
     margin-bottom: 5px;
     font-weight: bold;
     color: #555;
+    width: 100%;
   }
   
   .formgroup input,
@@ -62,11 +96,11 @@
     color: #ffffff;
     border: none;
     height: 100%;
-    width: 130px;
+    padding: 5px 30px;
     margin:0 auto;
     text-align: center;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 32px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
@@ -80,4 +114,12 @@
     display: flex;
    
   }
+  .success-message {
+    color: green;
+    margin-top: 10px;
+  }
   
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }

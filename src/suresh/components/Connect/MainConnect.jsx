@@ -1,12 +1,12 @@
 import React from 'react'
 import Connect from './pages/Connect'
-import Register from './pages/Register'
 
+import Registr from './../../../homepages/homecomponents/Registr.jsx';
 const MainConnect = () => {
   return (
     <>
     <Connect/>
-    <Register/>
+    <Registr/>
     </>
   )
 }

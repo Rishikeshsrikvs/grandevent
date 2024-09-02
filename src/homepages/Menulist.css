@@ -1,0 +1,95 @@
+.menulistparent{
+    width: 100%;
+    padding-top: 10vh;
+    
+    
+}
+.mlhead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+
+}
+.mlhead h1{
+    font-family: Outfit;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 41px;
+    text-align: left;
+
+}
+.mlhead span{
+    font-family: Playfair Display;
+    font-size: 96px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 41px;
+    text-align: left;
+
+}
+.mlcontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+.mlcard{
+    width: 30%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #7C1109;
+    margin-bottom: 20px;
+}
+.mlimg{
+    height: 300px;
+    width: 100%;
+    
+
+}
+.mlimg img{
+    width: 100%;
+    height: 100%;
+}
+.mlcard h1{
+    color: white;
+    
+    background-color: #F06D27;
+    font-family: Outfit;
+    font-size: 32px;
+    width: 100%;
+    font-weight: 700;
+    margin-top: 5px;
+    
+    text-align: center;
+    padding: 5px auto;
+
+
+}
+.mlbtns{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px 20px;
+    
+}
+.mlbtns button{
+    color: #F06D27;
+   
+    background-color: #FFFFFF;
+    font-family: Outfit;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.2px;
+    text-align: center;
+
+    
+}

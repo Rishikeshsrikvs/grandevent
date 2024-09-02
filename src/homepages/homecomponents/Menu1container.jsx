@@ -12,7 +12,9 @@ import n12 from './../../assets/menu/n12.png';
 import n21 from './../../assets/menu/n21.png';
 import n22 from './../../assets/menu/n22.png';
 import n3 from './../../assets/menu/n3.png';
+import { useNavigate } from 'react-router-dom';
 const Menu1container = () => {
+    const navigate = useNavigate();
   return (
     <div className="menu1container">
                 <div className="manu1up">
@@ -27,7 +29,7 @@ const Menu1container = () => {
                     <div className="mn3"><img src={m3} alt="" /></div>
                     <div className="mn4">
                         <h1>BREAK FAST</h1>
-                        <button>VIEW MORE</button>
+                        <button onClick={()=>{ navigate('/menuview', { state: { menuType: 'breakfast' } })}}>VIEW MORE</button>
                     </div>
                 </div>
                 <div className="manu1up">
@@ -42,7 +44,7 @@ const Menu1container = () => {
                     <div className="mn3"><img src={n3} alt="" /></div>
                     <div className="mn4">
                         <h1>LUNCH</h1>
-                        <button>VIEW MORE</button>
+                        <button onClick={()=>{ navigate('/menuview', { state: { menuType: 'lunch' } })}}>VIEW MORE</button>
                     </div>
                 </div>
                 <div className="manu1up">
@@ -57,7 +59,7 @@ const Menu1container = () => {
                     <div className="mn3"><img src={m3} alt="" /></div>
                     <div className="mn4">
                         <h1>DINNER</h1>
-                        <button>VIEW MORE</button>
+                        <button onClick={()=>{ navigate('/menuview', { state: { menuType: 'dinner' } })}}>VIEW MORE</button>
                     </div>
                 </div>
             </div>

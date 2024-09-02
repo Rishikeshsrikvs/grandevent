@@ -1,7 +1,7 @@
 .header {
   width: 100%;
 }
-.header .container {
+.header .header-container {
   width: 90%;
   text-align: center;
   height: 50vh;
@@ -11,22 +11,22 @@
   margin: 0rem auto;
 }
 
-.header .container h1 {
+.header .header-container h1 {
   font-size: 48px;
 }
-.header .container .left {
+.header .header-container .left {
   position: absolute;
   left: 0;
   z-index: -5;
 }
-.header .container .right {
+.header .header-container .right {
   position: absolute;
   right: 0;
   z-index: -5;
 }
 
 @media screen and (max-width: 1040px) {
-  .header .container {
+  .header .header-container {
     width: 100%;
     margin: 0 auto;
     height: 100vh;
@@ -42,7 +42,7 @@
   .header {
     width: 100%;
   }
-  .header .container {
+  .header .header-container {
     width: 100%;
     margin: 0 auto;
     height: 30vh;
@@ -52,10 +52,10 @@
     text-transform: capitalize;
     font-size: 8px;
   }
-  .header .container .left {
+  .header .header-container .left {
     display: none;
   }
-  .header .container .right {
+  .header .header-container .right {
     width: 120px;
     position: absolute;
     right: 0;
@@ -67,7 +67,7 @@
   .header {
     width: 100%;
   }
-  .header .container {
+  .header .header-container {
     width: 100%;
     margin: 0 auto;
     height: 20vh;
@@ -79,22 +79,22 @@
     font-family: "Playfair Display", serif;
   }
 
-  .header .container h1 {
+  .header .header-container h1 {
     width: 90%;
     margin: 0 auto;
     height: 10px;
     font-size: 18px;
   }
-  .header .container .left {
+  .header .header-container .left {
     display: none;
   }
-  .header .container .right {
+  .header .header-container .right {
     width: 120px;
     position: absolute;
     right: 0;
     z-index: -5;
   }
-  .header .container .right img {
+  .header .header-container .right img {
     width: 100%;
   }
 }

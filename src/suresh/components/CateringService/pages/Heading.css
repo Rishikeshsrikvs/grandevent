@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
-.heading {
+.Catservheading {
   width: 100%;
   text-align: center;
   justify-content: center;
@@ -11,7 +11,7 @@
   flex-direction: row-reverse;
   margin: 5rem auto;
 }
-.heading .container h1 {
+.Catservheading .catservcontainer h1 {
   font-size: 45px;
   font-family: "Playfair Display", serif;
   font-weight: 700;
@@ -19,20 +19,20 @@
   text-transform: uppercase;
 }
 
-.heading .container {
+.Catservheading .catservcontainer {
   position: relative;
 }
-.heading .container .circle1 {
+.Catservheading .catservcontainer .circle1 {
   position: absolute;
   top: -50px;
   left: -25px;
 }
-.heading .container .circle2 {
+.Catservheading .catservcontainer .circle2 {
   position: absolute;
   top: -30px;
   left: -12rem;
 }
-.heading .container .circle3 {
+.Catservheading .catservcontainer .circle3 {
   position: absolute;
   bottom: -5rem;
   left: -4rem;
@@ -40,42 +40,42 @@
 
 /*<------------------- headding end ---------------> */
 @media screen and (max-width: 768px) {
-  .heading {
+  .Catservheading {
     position: relative;
     height: 20vh;
     display: flex;
     align-items: center;
     margin: 2rem auto;
   }
-  .heading .container h1 {
+  .Catservheading .catservcontainer h1 {
     font-size: 14px;
     font-family: "Playfair Display", serif;
   }
-  .heading .container .circle1 {
+  .Catservheading .catservcontainer .circle1 {
     position: absolute;
     width: 10px;
     top: -30px;
     left: 15px;
   }
-  .heading .container .circle1 img {
+  .Catservheading .catservcontainer .circle1 img {
     width: 100%;
   }
-  .heading .container .circle2 {
+  .Catservheading .catservcontainer .circle2 {
     position: absolute;
     width: 34px;
     top: -46px;
     left: -1.8rem;
   }
-  .heading .container .circle2 img {
+  .Catservheading .catservcontainer .circle2 img {
     width: 100%;
   }
-  .heading .container .circle3 {
+  .Catservheading .catservcontainer .circle3 {
     position: absolute;
     width: 12px;
     bottom: -1.5rem;
     left: -1.5rem;
   }
-  .heading .container .circle3 img {
+  .Catservheading .catservcontainer .circle3 img {
     width: 100%;
   }
 }

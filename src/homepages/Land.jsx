@@ -14,7 +14,7 @@ import breakfast from './../assets/land/breakfast.png';
 import dinner from './../assets/land/dinner.png';
 import more from './../assets/land/more.png';
 import land6 from './../assets/land/land6back.png';
-
+import landpopupimage from './../assets/land/landpopup.png';
 import l1 from './../assets/land/landsub/l1.png';
 import l2up from './../assets/land/landsub/l2up.png';
 import l3down from './../assets/land/landsub/l3down.png';
@@ -25,20 +25,33 @@ import l31 from './../assets/land/landsub/l31.png';
 import l32 from './../assets/land/landsub/l32.png';
 
 import Registr from './homecomponents/Registr';
-
-
+import Testimonials from './homecomponents/Testimonials';
+import Getquote from './homecomponents/Getquote';
 import Sendmessage from './homecomponents/Sendmessage';
 const Land = () => {
 
-  
+  const [isImageVisible, setIsImageVisible] = useState(true);
   const navigate = useNavigate();
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
+  
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+  const closeImageOverlay = () => {
+      setIsImageVisible(false);}
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
   return (
     <div className='landparent'>
+       {isImageVisible && (
+        <div className="popupimage-overlay" onClick={closeImageOverlay}>
+          <div className="popupimage-container" onClick={(e) => e.stopPropagation()}>
+            <button className="popupcloseimage-button" onClick={closeImageOverlay}>X</button>
+            <img src={landpopupimage} alt="Sample" />
+          </div>
+        </div>
+      )}
       <div className="land1main">
           <div className="land1textcon">
             <div className="land1left">
@@ -47,16 +60,7 @@ const Land = () => {
               <p className='land1leftp3'>FSSAI CERTIFIED COMPANY - ISO 9001 : 2015</p>
 
             </div>
-            <div className="land1right">
-              <div>Get your Quote</div>
-              <input type="text" placeholder='Name'/>
-              <input type="text" placeholder='Phone Number'/>
-              <input type="text" placeholder='Location'/>
-              <select name="" id="">
-                <option value="Marriage  cateering">Marriage  cateering</option>
-              </select>
-              <input type="SUBMIT" placeholder='Name'/>
-            </div>
+            <Getquote/>
           </div>
           <div className="land1iconcon">
             <div className="land1iconleft">
@@ -94,38 +98,7 @@ const Land = () => {
       </div>
       <div className="land3testmain">
         <h1 className='land3title'>OUR <span>MILESTONE</span></h1>
-        <div className="landfeedcon">
-          <div className="feedcard">
-            <div className="land3feedimg">
-              <img src="" alt="" />
-            </div>
-            <h1>very good taste and neat service</h1>
-            <div className="land3feedbtn">
-              baala
-            </div>
-
-          </div>
-          <div className="feedcard">
-            <div className="land3feedimg">
-              <img src="" alt="" />
-            </div>
-            <h1>very good taste and neat service</h1>
-            <div className="land3feedbtn">
-              baala
-            </div>
-
-          </div>
-          <div className="feedcard">
-            <div className="land3feedimg">
-              <img src="" alt="" />
-            </div>
-            <h1>very good taste and neat service</h1>
-            <div className="land3feedbtn">
-              baala
-            </div>
-
-          </div>
-        </div>
+        <Testimonials/>
         {isModalOpen && <Sendmessage toggleModal={toggleModal} />}
         <div className="land3wriereview"><button  onClick={toggleModal}>Write review</button></div>
       </div>
@@ -156,39 +129,39 @@ const Land = () => {
         <p>The main objective of our organization is to cater a nutritious and hygenic food served at its best. We do catering service of all types starting from south indian dishes to completely typical north indian dishes. We do special services for the iyer, iyengars and all other communities with an special touch</p>
         <div className="land5con">
           <div className="land5cardmain">
-            <Link className="land5card">
+            <div className="land5card">
               <div className="l5cardimg"><img src={breakfast} alt="" /></div>
               <p>BREAKFAST</p>
-              <Link to="" className="l5btn">VIEW MENU</Link>
-            </Link>
+              <div  className="l5btn" onClick={()=>{ navigate('/menuview', { state: { menuType: 'breakfast' } })}}>VIEW MENU</div>
+            </div>
           </div>
           <div className="land5cardmain">
-            <Link className="land5card">
+            <div className="land5card">
               <div className="l5cardimg"><img src={lunch} alt="" /></div>
               <p>LUNCH</p>
-              <div className="l5btn">VIEW MENU</div>
-            </Link>
+              <div className="l5btn" onClick={()=>{ navigate('/menuview', { state: { menuType: 'lunch' } })}}>VIEW MENU</div>
+            </div>
           </div>
           <div className="land5cardmain">
-            <Link className="land5card">
+            <div className="land5card">
               <div className="l5cardimg"><img src={dinner} alt="" /></div>
               <p>DINNER</p>
-              <div className="l5btn">VIEW MENU</div>
-            </Link>
+              <div className="l5btn" onClick={()=>{ navigate('/menuview', { state: { menuType: 'dinner' } })}}>VIEW MENU</div>
+            </div>
           </div>
           <div className="land5cardmain">
-            <Link className="land5card">
+            <div className="land5card">
               <div className="l5cardimg"><img src={seemant} alt="" /></div>
               <p>SEEMANTHA SAPPADU</p>
-              <div className="l5btn">VIEW MENU</div>
-            </Link>
+              <div className="l5btn" onClick={()=>{ navigate('/menuview', { state: { menuType: 'seemantham' } })}}>VIEW MENU</div>
+            </div>
           </div>
           <div className="land5cardmain">
-            <Link className="land5card">
+            <div className="land5card">
               <div className="l5cardimg"><img src={more} alt="" /></div>
               <p>MORE</p>
-              <div className="l5btn">MORE</div>
-            </Link>
+              <div className="l5btn" onClick={()=>{ navigate('/menuview', { state: { menuType: 'differ' } })}}>MORE</div>
+            </div>
           </div>
         </div>      
       </div>

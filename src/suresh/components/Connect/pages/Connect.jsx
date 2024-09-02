@@ -86,7 +86,7 @@ const Connect = () => {
                 </div>
               </div>
               <div className="row">
-                <h3>Map</h3>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15543.235602223122!2d80.0982294!3d13.1112895!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52630b6a082cd7%3A0xf00964b08b210778!2sGrand%20Events%20Catering%20Services!5e0!3m2!1sen!2sin!4v1725279766783!5m2!1sen!2sin" ></iframe>
               </div>
             </div>
           </div>

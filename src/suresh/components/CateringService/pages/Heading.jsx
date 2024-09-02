@@ -6,8 +6,8 @@ import "./Heading.css";
 
 const Heading = () => {
   return (
-    <div className="heading">
-      <div className="container">
+    <div className="Catservheading">
+      <div className="catservcontainer">
         <h1>Chennai's top catering company</h1>
         <div className="circle1">
           <img src={circle1} />

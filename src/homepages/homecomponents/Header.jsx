@@ -42,7 +42,7 @@ export const Header = () => {
       
       <div className={`navcontainer ${isMenuOpen ? 'active' : ''}`}>
         <ul className='navul'>
-          <li><NavLink to="Home" className={({ isActive }) => (isActive ? 'active-link' : '')}>Home</NavLink></li>
+          <li><NavLink to="/" className={({ isActive }) => (isActive ? 'active-link' : '')}>Home</NavLink></li>
           <li><NavLink to="About" className={({ isActive }) => (isActive ? 'active-link' : '')}>About Us</NavLink></li>
           <li><NavLink to="Menu" className={({ isActive }) => (isActive ? 'active-link' : '')}>Menu</NavLink></li>
           <li><NavLink to="Services" className={({ isActive }) => (isActive ? 'active-link' : '')}>Services</NavLink></li>

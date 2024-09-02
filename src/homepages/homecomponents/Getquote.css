@@ -1,0 +1,72 @@
+.land1right{
+    width: 450px;
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    background-color: #FFFFFF3D;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 40px;
+    justify-content: space-evenly;
+
+
+}
+.land1right>input,.land1righttitle,.land1right>select{
+    width: 90%;
+    height: 40px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    font-family: Outfit;
+font-size: 18px;
+font-weight: 500;
+line-height: 30.24px;
+}
+.land1right option{
+    color:black
+}
+.land1righttitle{
+    background-color: #FFFFFF;
+    color: black;
+    border-radius: 5px;
+    font-family: Outfit;
+font-size: 24px;
+font-weight: 500;
+line-height: 30.24px;
+text-align: center;
+
+
+}
+.land1right>input::placeholder{
+    font-family: Outfit;
+font-size: 18px;
+font-weight: 500;
+line-height: 30.24px;
+
+color: #FFFFFF;
+
+}
+.land1right>input:focus,.land1right>select:focus{
+    outline: none;
+}
+.land1right>input[type=button]{
+    background-color: #1E31FB;
+    border: none;
+}
+.land1right>input[type=button]:hover{
+    background-color: #626fff;
+}
+
+.success-message {
+    color: green;
+    margin-top: 10px;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+    
+  }
+  

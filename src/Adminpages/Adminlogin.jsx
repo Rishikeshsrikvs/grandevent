@@ -81,11 +81,17 @@ const Adminlogin = () => {
 
     try {
       const response = await api.get(`/api/admin/verify/${otpValue}`, {
-        headers: { authorization: `${token}` }, // Use the token from AuthContext
+        headers: { authorization: `${token}` },
+
+        // Use the token from AuthContext
       });
 
       if (response.status === 200) {
-        navigate('/admin/SHRA/dashboard'); // Redirect to dashboard on successful OTP verification
+        login(response.data.jwt);
+        console.log(response.data.jwt);
+        navigate('/admin/SHRA/dashboard');
+
+         // Redirect to dashboard on successful OTP verification
       } else {
         setErrorMessage('OTP verification failed. Please try again.');
       }

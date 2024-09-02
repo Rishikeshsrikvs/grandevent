@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
- // Import axios for API calls
 import { useNavigate } from 'react-router-dom';
-import api from '../api/api';
+import api from '../api/api'; // Ensure api is properly configured with Axios
 import { useAuth } from './auth/AuthContext';
 import './Aevents.css';
 
@@ -9,8 +8,7 @@ const Aevents = () => {
   const navigate = useNavigate();
   const auth = useAuth();
   const token = auth.token;
-  console.log(token);
-  
+
   const [events, setEvents] = useState([]); // State to store events
 
   // Fetch events from the API on component mount
@@ -21,22 +19,34 @@ const Aevents = () => {
       }
     })
     .then((response) => {
-      setEvents(response.data.message);
-      console.log(response.data.message);
-       // Set the events data from the response
+      setEvents(response.data.message); // Set the events data from the response
     })
     .catch((error) => {
       console.error("There was an error fetching the events!", error);
     });
-  }, []);
+  }, [token]);
 
-  // Handlers for navigation
-  const handleCancelledEventsClick = () => {
-    navigate('/admin/SHRA/cancelled-events');
-  };
-
-  const handleNewEventsClick = () => {
-    navigate('/admin/SHRA/new-events');
+  // Handler to cancel the event
+  const handleDenyClick = (eventId) => {
+    api.put('/api/admin/eventCancel', 
+      {
+        eventId: eventId // Pass the event ID in the request body
+      }, 
+      {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          Authorization: token // Add the authorization token
+        }
+      }
+    )
+    .then((response) => {
+      console.log('Event canceled successfully', response.data);
+      // Optionally, remove the canceled event from the UI or refetch events
+      setEvents(events.filter(event => event._id !== eventId));
+    })
+    .catch((error) => {
+      console.error("There was an error cancelling the event!", error);
+    });
   };
 
   return (
@@ -44,8 +54,8 @@ const Aevents = () => {
       <h1>EVENTS</h1>
       <div className="aeventcon">
         <div className="aeventtitlecon">
-          <button onClick={handleCancelledEventsClick}>Cancelled events</button>
-          <button onClick={handleNewEventsClick}>
+          <button onClick={() => navigate('/admin/SHRA/cancelled-events')}>Cancelled events</button>
+          <button onClick={() => navigate('/admin/SHRA/new-events')}>
             <span>
               <img src="" alt="" />
             </span>
@@ -75,7 +85,7 @@ const Aevents = () => {
                   <td>
                     <div className='eventbuttonstr'>
                       <div className="eadone">DONE</div>
-                      <div className="eadeny">DENY</div>
+                      <div className="eadeny" onClick={() => handleDenyClick(event._id)}>DENY</div>
                       <div className="eamodify">MODIFY</div>
                     </div>
                   </td>

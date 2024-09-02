@@ -4,7 +4,10 @@ import './Menu.css';
 import mnbackleft from './../assets/menu/menubackleft.png';
 import n22 from './../assets/menu/n22.png';
 import Registr from './homecomponents/Registr';
+
 const Menu = () => {
+
+  
   return (
     <div className='menuparent'>
       <div className="menuhead">
@@ -36,7 +39,7 @@ const Menu = () => {
                     <div className="mntitle">
                     <h1>Dinner</h1>
                 </div>
-                <div className="mnbtn"><button>View Menu</button></div>
+                <div className="mnbtn"><button >View Menu</button></div>
                 </div>
                 <div className="manu2card">
                     <div className="mnimg"><img src={n22} alt="" /></div>

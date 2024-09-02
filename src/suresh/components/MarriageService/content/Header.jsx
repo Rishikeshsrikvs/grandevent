@@ -6,7 +6,7 @@ import right from '../Marriageimages/headright.png'
 const Header = () => {
   return (
     <div className='header'>
-      <div className="container">
+      <div className="header-container">
         <div className='left'>
           <img src={left} alt="" />
         </div>

@@ -4,16 +4,18 @@
   }
   .adminparent{
     display: flex;
-    height: 100vh;
+    height: auto;
     flex-direction: column;
     width: 100%;
   }
   .admintitle{
     background-color: #141414;
-    
+    position: fixed;
     width: 100%;
     display: block;
     padding: 20px;
+    z-index: 23;
+   
    
 
 
@@ -32,7 +34,7 @@
    .dashboard-container {
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 100%;
     position: relative;
     height: 100%;
 
@@ -49,9 +51,11 @@
     position: absolute;
     left: 30%;
     background-color: aliceblue;
-    width: 70%;
-    height: 100%;
+    flex: 1;
+    height: 100vh;
+    margin: 0 auto;
     border: 2px solid red;
+    margin-top: 94px;
   }
   .adashmain{
     width: 100%;

@@ -18,7 +18,7 @@ import './Types.css'
 const Types = () => {
   return (
     <section className="types">
-      <div className="container">
+      <div className="types-container">
         <div className="ornament1">
             <img src={ornament1} />
         </div>
@@ -64,7 +64,7 @@ const Types = () => {
         </div>
         
       </div>
-      <div className="container">
+      <div className="types-container">
         <div className="image-section">
           <img src={image2} className="image-right" />
         </div>
@@ -90,7 +90,7 @@ const Types = () => {
           <img src={ornament5}  />
         </div>
       </div>
-      <div className="container">
+      <div className="types-container">
         <div className="text">
           <h3>baby shower catering</h3>
           <p>
@@ -104,7 +104,7 @@ const Types = () => {
           <img src={image3} className="image-right" />
         </div>
       </div>
-      <div className="container">
+      <div className="types-container">
         <div className="image-section">
           <img src={image4} className="image-right" />
         </div>

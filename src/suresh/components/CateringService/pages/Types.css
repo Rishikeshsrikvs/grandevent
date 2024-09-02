@@ -2,7 +2,7 @@
   width: 100%;
   margin: 1rem auto;
 }
-.types .container {
+.types .types-container {
   width: 100%;
   display: flex;
   align-items: center;
@@ -13,27 +13,27 @@
   padding: 20px;
 }
 
-.types .container .text {
+.types .types-container .text {
   width: 630px;
 }
-.types .container .text h3 {
+.types .types-container .text h3 {
   height: 65px;
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 600;
   font-family: "Outfit";
 }
-.types .container .text p {
+.types .types-container .text p {
   font-size: 24px;
   font-family: "Outfit";
   line-height: 34px;
   font-weight: 400;
   text-transform: capitalize;
 }
-.types .container .image-section {
+.types .types-container .image-section {
   width: 570px;
 }
-.types .container .image-section img {
+.types .types-container .image-section img {
   width: 100%;
 }
 
@@ -57,35 +57,35 @@
   position: absolute;
 }
 
-.types .container .ornament1 {
+.types .types-container .ornament1 {
   left: 0;
   top: -2rem;
 }
-.types .container .ornament2 {
+.types .types-container .ornament2 {
   left: 0;
   bottom: -2rem;
 }
-.types .container .ornament3 {
+.types .types-container .ornament3 {
   right: 14rem;
   bottom: -6.5rem;
   z-index: -5;
 }
-.types .container .ornament4 {
+.types .types-container .ornament4 {
   right: 0rem;
   top: -10rem;
   z-index: -5;
 }
-.types .container .ornament5 {
+.types .types-container .ornament5 {
   top: 0.4rem;
   left: 42.8rem;
   z-index: -5;
 }
-.types .container .ornament6 {
+.types .types-container .ornament6 {
   top: -1.5rem;
   left: 33rem;
   z-index: -5;
 }
-.types .container .ornament7 {
+.types .types-container .ornament7 {
   left: 1.8rem;
   bottom: -1.5rem;
   z-index: -5;
@@ -98,7 +98,7 @@
     width: 95%;
     margin: 0rem auto;
   }
-  .types .container {
+  .types .types-container {
     flex-direction: column-reverse;
     width: 100%;
     gap: 30px;
@@ -107,22 +107,22 @@
 
     position: relative;
   }
-  .types .container:nth-child(even) {
+  .types .types-container:nth-child(even) {
     flex-direction: column;
   }
 
-  .types .container .image-section {
+  .types .types-container .image-section {
     width: 255px;
     margin: 0 auto;
   }
-  .types .container .image-section img {
+  .types .types-container .image-section img {
     width: 100%;
   }
-  .types .container .text {
+  .types .types-container .text {
     width: 276px;
   }
   
-  .types .container .text h3 {
+  .types .types-container .text h3 {
     height: 10px;
     font-size: 16px;
     margin-bottom: 20px;
@@ -130,7 +130,7 @@
     font-weight: 600;
     text-transform: uppercase;
   }
-  .types .container .text p {
+  .types .types-container .text p {
     font-size: 12px;
     font-family: "Outfit";
     line-height: 16px;

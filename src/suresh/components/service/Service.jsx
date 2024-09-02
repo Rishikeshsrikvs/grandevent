@@ -4,13 +4,14 @@ import back from "../assets/service3.png";
 import page from "../assets/service4.png";
 import design3 from "../assets/design3.png";
 import "./Service.css";
+import Registr from "../../../homepages/homecomponents/Registr";
 
 
 const Service = () => {
   return (
     <>
       <div className="service">
-        <div className="container">
+        <div className="servicecontainer">
           <div className="hero">
             <h1>SERVICE</h1>
           </div>
@@ -100,6 +101,7 @@ const Service = () => {
             <h3></h3>
           </div>
         </div>
+        <Registr/>
       </div>
     </>
   );

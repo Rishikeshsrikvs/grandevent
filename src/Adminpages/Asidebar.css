@@ -7,11 +7,12 @@
 .sidebar {
     background-color: #141414;
     height: 100vh;
-    
+
     display: flex;
     min-width: 200px;
     flex-direction: column;
-    margin-top: 2px;
+   
+    margin-top: 90px;
     
     
     /* Add other styles as needed */
