@@ -563,10 +563,10 @@ margin-top: 5px;
     margin-bottom: 5vh;
 }
 .l9con{
-    width: 40%;
+    width: 100%;
     height: 70vh;
-    border: 2px solid black;
-    margin: 6vh auto;
+    
+    margin: 2vh ;
 
 }
 
@@ -577,6 +577,11 @@ margin-top: 5px;
 }
 .land1textcon{
     justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.land1textcon>div{
+    width: 90%;
 }
 .land1left{
     width: 90%;
@@ -986,6 +991,6 @@ margin-top: 5px;
   
    img {
     max-width:90vh;
-    height:;
+    
   }
   

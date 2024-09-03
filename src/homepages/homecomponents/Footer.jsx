@@ -17,9 +17,9 @@ const Footer = () => {
           <div className="footicon">
             <p>Follow for more updates</p>
             <div className="footiconcon">
-              <Link to="#"><img src={facebook} alt="Social Icon 1" /></Link>
-              <Link to="#"><img src={instagram} alt="Social Icon 2" /></Link>
-              <Link to="#"><img src={utube} alt="Social Icon 3" /></Link>
+              <Link to="https://www.facebook.com/GrandEvents.Chennai/"target="_blank" rel="noopener noreferrer"><img src={facebook} alt="Social Icon 1" /></Link>
+              <Link to="https://www.instagram.com/grandeventscatering/"target="_blank" rel="noopener noreferrer"><img src={instagram} alt="Social Icon 2" /></Link>
+              <Link to="https://www.youtube.com/@grandeventsatozmarriagecat8770"target="_blank" rel="noopener noreferrer"><img src={utube} alt="Social Icon 3" /></Link>
             </div>
           </div>
         </div>

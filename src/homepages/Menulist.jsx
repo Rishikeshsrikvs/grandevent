@@ -24,7 +24,7 @@ const Menulist = () => {
   // Function to handle view menu button click
   const handleViewMenu = (itemId) => {
     // Navigate to Menudetail component with the itemId
-    navigate('/menudetail', { state: { itemId, menuType } });
+    navigate('/Detailedmenu', { state: { itemId, menuType } });
   };
 
   return (

@@ -49,6 +49,29 @@ const Aevents = () => {
     });
   };
 
+  // Handler to mark the event as done
+  const handleDoneClick = (eventId) => {
+    api.put('/api/admin/eventDone', 
+      {
+        eventId: eventId // Pass the event ID in the request body
+      }, 
+      {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          Authorization: token // Add the authorization token
+        }
+      }
+    )
+    .then((response) => {
+      console.log('Event marked as done successfully', response.data);
+      // Optionally, remove the completed event from the UI or refetch events
+      setEvents(events.filter(event => event._id !== eventId));
+    })
+    .catch((error) => {
+      console.error("There was an error marking the event as done!", error);
+    });
+  };
+
   return (
     <div className="adashmmain">
       <h1>EVENTS</h1>
@@ -84,7 +107,7 @@ const Aevents = () => {
                   <td>{new Date(event.event_date).toLocaleDateString()}</td>
                   <td>
                     <div className='eventbuttonstr'>
-                      <div className="eadone">DONE</div>
+                      <div className="eadone" onClick={() => handleDoneClick(event._id)}>DONE</div>
                       <div className="eadeny" onClick={() => handleDenyClick(event._id)}>DENY</div>
                       <div className="eamodify">MODIFY</div>
                     </div>

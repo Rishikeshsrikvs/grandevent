@@ -12,47 +12,94 @@
     background-color: #D9D9D9;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    
     align-items: center;
     border-radius: 11px;
+    padding: 3%;
     
 }
 .netin{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
+    
 
     
+}
+.netin h2{
+    padding: 0;
+    margin: 0;
+}
+.netintop{
+flex-direction: row;
+justify-content: space-between;
+
+}
+.netintop .netinsub{
+    width: 48%;
 }
 .netinsub input,.netinsub label{
     width: 100%;
     display: block;
+    color: black;
 }
-.netinsub input,.netin button{
+.anewetform input,.anewetform button{
     background-color: black;
     color: white;
     height: 34px;
+}
+.netcheck{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
+    width: auto;
+    gap: 3px;
+}
+.netcheck input{
+    background-color: black;
+    color: white;
 }
 .netin button{
     padding: 5px ;
     width: 200px;
     white-space: nowrap;
 }
-.anewetform > div{
-    width: 80%;
-    text-align: left;
-}
+
 .netinsub{
     display: flex;
     flex-direction: column;
     justify-content: left;
-    gap: 8px;
+    gap: 3px;
     
 }
 .netincheckcon{
+    display: flex;
     flex-direction: row;
+    width: 80%;
     justify-content: space-evenly;
+    
+   
+}
+.netcheck label{
+color: black;
 }
 .netinbtncon{
     align-items: center;
 }
+.netinbtncon button{
+    background-color: black;
+    color: white;
+    width: unset;
+}
+.netinbtncon button:hover{
+    background-color: black;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  

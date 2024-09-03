@@ -8,6 +8,7 @@ import Asettings from './Adminpages/Asettings';
 import Adminlogin from './Adminpages/Adminlogin';
 import Aevents from './Adminpages/Aevents';
 import Anewevents from './Adminpages/Anewevents';
+import Atestimonial from './Adminpages/Atestimonial';
 import Acanceledevents from './Adminpages/Acanceledevents';
 import ProtectedRoute from './Adminpages/auth/ProtectedRoute';
 import './Admin.css'; // Import the CSS file for styling
@@ -38,6 +39,8 @@ const Admin = () => {
                       <Route path="/events" element={<Aevents />} />
                       <Route path="/new-events" element={<Anewevents />} />
                       <Route path="/cancelled-events" element={<Acanceledevents />} />
+                      <Route path="/testimonial" element={<Atestimonial />} />
+
                     </Routes>
                   </div>
                 </div>

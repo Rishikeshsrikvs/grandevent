@@ -21,7 +21,7 @@ const Asidebar = () => {
         <Link to="/admin/SHRA/events">Events</Link>
         </li>
         <li>
-        <Link to="/admin/SHRA/dashboard">Dashboard</Link>
+        <Link to="/admin/SHRA/testimonial">Testimonial</Link>
         </li>
         <li>
         <Link to="/admin/SHRA/dashboard">Dashboard</Link>

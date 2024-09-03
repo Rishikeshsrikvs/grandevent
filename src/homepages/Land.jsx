@@ -23,7 +23,7 @@ import l21 from './../assets/land/landsub/l21.png';
 import l22 from './../assets/land/landsub/l22.png';
 import l31 from './../assets/land/landsub/l31.png';
 import l32 from './../assets/land/landsub/l32.png';
-
+import Reelslider from './homecomponents/Reelslider';
 import Registr from './homecomponents/Registr';
 import Testimonials from './homecomponents/Testimonials';
 import Getquote from './homecomponents/Getquote';
@@ -64,9 +64,9 @@ const Land = () => {
           </div>
           <div className="land1iconcon">
             <div className="land1iconleft">
-              <img src={insta} alt="" />
-              <img src={face} alt="" />
-              <img src={utube} alt="" />
+              <img src={insta} alt="" onClick={() => window.open('https://www.instagram.com/grandeventscatering/', '_blank')} />
+              <img src={face} alt="" onClick={() => window.open('https://www.facebook.com/GrandEvents.Chennai/', '_blank')}/>
+              <img src={utube} alt="" onClick={() => window.open('https://www.youtube.com/@grandeventsatozmarriagecat8770', '_blank')}/>
               <img src={Whats} alt="" />
             </div>
             <div className="land1iconright">
@@ -196,8 +196,10 @@ const Land = () => {
       </div>
       <div className="land9main">
         <h1 className='land4title'>REELS</h1>
-        <div className="l9con"></div>
-        <div className="land3wriereview"><button>FOR MORE FEEDS</button></div>
+        <div className="l9con">
+            <Reelslider/>
+        </div>
+        <div className="land3wriereview"><button onClick={() => window.location.href = 'https://www.instagram.com/grandeventscatering/'}>FOR MORE FEEDS</button></div>
       </div>
          
       <Registr/>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import api from '../../api/api';
 import './Getquote.css';
 
@@ -9,9 +9,34 @@ const Getquote = () => {
   const [service, setService] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [isFormVisible, setIsFormVisible] = useState(true); // Default to true on larger screens
+  const [isSmallScreen, setIsSmallScreen] = useState(false); // Detect screen size
+
+  useEffect(() => {
+    // Check screen size on initial load and on window resize
+    const handleResize = () => {
+      const isSmall = window.innerWidth <= 768;
+      setIsSmallScreen(isSmall);
+      if (!isSmall) {
+        setIsFormVisible(true); // Always show form on larger screens
+      } else {
+        setIsFormVisible(false); // Hide form by default on small screens
+      }
+    };
+
+    // Add event listener
+    window.addEventListener('resize', handleResize);
+
+    // Call on component mount
+    handleResize();
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const validateForm = () => {
-    // Simple validation: ensure all fields are filled and phone number is valid
     const phoneRegex = /^[0-9]{10}$/;
     if (!name || !contact || !location || !service) {
       setErrorMessage('All fields are required.');
@@ -25,23 +50,19 @@ const Getquote = () => {
   };
 
   const handleSubmit = async () => {
-    console.log("clicked");
-    
     if (!validateForm()) {
       return;
     }
 
     try {
       const response = await api.post('/quotes', {
-        "contactName": name,                // Correct key as per the Postman image
-        "contact": contact,          // Correct key as per the Postman image
-        "service": service,      // We can consider "service" as the "description"
-        "location": location         // Add location as additional data if needed
+        contactName: name,
+        contact: contact,
+        service: service,
+        location: location
       });
-      
+
       if (response.status === 201) {
-        console.log("success");
-        
         setSuccessMessage('Your quote request has been submitted successfully!');
         setErrorMessage('');
         // Clear form fields
@@ -56,46 +77,59 @@ const Getquote = () => {
     }
   };
 
+  const toggleFormVisibility = () => {
+    setIsFormVisible(!isFormVisible);  // Toggle form visibility
+  };
+
   return (
-    <div className="land1right">
-      <div className='land1righttitle'>Get your Quote</div>
-      <input
-        type="text"
-        placeholder="Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="Phone Number"
-        value={contact}
-        onChange={(e) => setContact(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="Location"
-        value={location}
-        onChange={(e) => setLocation(e.target.value)}
-      />
-      <select
-        value={service}
-        onChange={(e) => setService(e.target.value)}
-      >
-        
-        <option value="Marriage Catering">Marriage Catering</option>
-        <option value="Private Party Catering">Private Party Catering</option>
-        <option value="Special Family Function">Special Family Function</option>
-        <option value="Corporate Catering">Corporate Catering</option>
-      </select>
-      <input
-        type="button"
-        value="Submit"
-        onClick={handleSubmit}
-      />
+    <div className="getquote-container">
+      {isSmallScreen && !isFormVisible && (
+        <button className="getquote-button" onClick={toggleFormVisibility}>
+          Get Quote
+        </button>
+      )}
       
-      {/* Success and Error Messages */}
-      {successMessage && <div className="success-message">{successMessage}</div>}
-      {errorMessage && <div className="error-message">{errorMessage}</div>}
+      {(isFormVisible || !isSmallScreen) && (
+        <div className="land1right">
+          <div className='land1righttitle'>Get your Quote</div>
+          <input
+            type="text"
+            placeholder="Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Phone Number"
+            value={contact}
+            onChange={(e) => setContact(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Location"
+            value={location}
+            onChange={(e) => setLocation(e.target.value)}
+          />
+          <select
+            value={service}
+            onChange={(e) => setService(e.target.value)}
+          >
+            <option value="">Select Service</option>
+            <option value="Marriage Catering">Marriage Catering</option>
+            <option value="Private Party Catering">Private Party Catering</option>
+            <option value="Special Family Function">Special Family Function</option>
+            <option value="Corporate Catering">Corporate Catering</option>
+          </select>
+          <input
+            type="button"
+            value="Submit"
+            onClick={handleSubmit}
+          />
+          
+          {successMessage && <div className="success-message">{successMessage}</div>}
+          {errorMessage && <div className="error-message">{errorMessage}</div>}
+        </div>
+      )}
     </div>
   );
 };

@@ -4,6 +4,7 @@ import './Menu.css';
 import mnbackleft from './../assets/menu/menubackleft.png';
 import n22 from './../assets/menu/n22.png';
 import Registr from './homecomponents/Registr';
+import Menu2container from './homecomponents/Menu2container';
 
 const Menu = () => {
 
@@ -19,51 +20,8 @@ const Menu = () => {
         <div className="menusub">
             <h1>Our Menu</h1>
             <Menu1container/>
-            <div className="menu2container">
-                <div className="manu2card">
-                    <div className="mnimg"><img src={n22} alt="" /></div>
-                    <div className="mntitle">
-                        <h1>Dinner</h1>
-                    </div>
-                    <div className="mnbtn"><button>View Menu</button></div>
-                </div>
-                <div className="manu2card">
-                    <div className="mnimg"><img src={n22} alt="" /></div>
-                    <div className="mntitle">
-                    <h1>Dinner</h1>
-                </div>
-                <div className="mnbtn"><button>View Menu</button></div>
-                </div>
-                <div className="manu2card">
-                    <div className="mnimg"><img src={n22} alt="" /></div>
-                    <div className="mntitle">
-                    <h1>Dinner</h1>
-                </div>
-                <div className="mnbtn"><button >View Menu</button></div>
-                </div>
-                <div className="manu2card">
-                    <div className="mnimg"><img src={n22} alt="" /></div>
-                    <div className="mntitle">
-                    <h1>Dinner</h1>
-                </div>
-                <div className="mnbtn"><button>View Menu</button></div>
-                </div>
-                <div className="manu2card">
-                    <div className="mnimg"><img src={n22} alt="" /></div>
-                    <div className="mntitle">
-                    <h1>Dinner</h1>
-                </div>
-                <div className="mnbtn"><button>View Menu</button></div>
-                </div>
-                <div className="manu2card">
-                    <div className="mnimg"><img src={n22} alt="" /></div>
-                    <div className="mntitle">
-                    <h1>Dinner</h1>
-                </div>
-                <div className="mnbtn"><button>View Menu</button></div>
-                </div>
-                
-            </div>
+            <Menu2container/>
+
         </div>
 
         

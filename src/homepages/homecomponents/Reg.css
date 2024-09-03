@@ -1,15 +1,6 @@
 
 
-/* body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    background-color: #7C1109;
-  } */
+
   .registermainparent{
     height: auto;
     width: 100%;
@@ -112,7 +103,7 @@
     box-sizing: border-box;
   }
   
-  .formsub button {
+  .formbtn {
   
     padding: 10px 30px;
     background-color: #7C1109;
@@ -126,6 +117,9 @@
     display: block;
     
   }
+  .formbtn:hover {
+    background-color: #ec6359;
+  } 
   .tetxarea{
   width: 80%;
     height: 150px;
@@ -140,9 +134,7 @@
     border: none;
     outline: none;
   }
-  .formsub button:hover {
-    background-color: #5a0c07;
-  } 
+ 
   .formsubcontainer{
     display: flex;
     width: 80%;
@@ -177,10 +169,7 @@
   }
   
   
-  .formbtn{
-    
-    
-  }
+  
 
   @media (max-width: 768px){
     .registermainparent{
@@ -218,4 +207,15 @@
       margin-bottom: 8px;
     }
 
+  }
+
+  .error {
+    color: red;
+    font-size: 14px;
+  }
+  
+  .success {
+    color: green;
+    font-size: 16px;
+    margin-top: 20px;
   }

@@ -1,47 +1,54 @@
-.menudetailparent{
+.menudetailparent {
     width: 100vw;
     display: flex;
-   
     flex-direction: column;
     align-items: center;
-    border: 2px solid red;
     padding: 5%;
-    
-   
-
+    border: 2px solid red;
 }
-.menudetailimg{
-    width: 90%;
+
+.menudetailimg {
+    width:auto;
+    
     height: auto;
-    display: flex;
+    margin-top: 10vh;
+    color: azure;
+    
+    display: flex;  /* Ensures the iframe is centered */
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
-
+    overflow: hidden;
 }
-.menudetailimg img{
-    width: 100%;
-    height: 100%;
-    min-height: 50vh;
-    border-radius: 10px;
+
+.menudetailimg iframe{
+    width: 52vw;
+    padding: 5px;
+    background-color: white;
+    color: aliceblue
+
+    /* max-width: 80vh; */
+    ;
+    height: 150vh;
+    border: none; /* Remove border for a clean look */
     border-radius: 10px;
     background-color: antiquewhite;
+    overflow: hidden;
 }
-.menudetailbtn{
+
+.menudetailbtn {
     margin-top: 10px;
     width: 100%;
     text-align: right;
-
 }
-.menudetailbtn button{
+
+.menudetailbtn button {
     background-color: #7C1109;
     color: white;
-    font-family: Outfit;
+    font-family: Outfit, sans-serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 41px;
-    
     padding: 5px 30px;
     border-radius: 10px;
-
+    cursor: pointer; /* Add cursor pointer for better UX */
 }
