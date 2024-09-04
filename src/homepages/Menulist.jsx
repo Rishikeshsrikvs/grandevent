@@ -4,6 +4,9 @@ import './Menulist.css';
 import api from '../api/api';
 
 const Menulist = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const location = useLocation();
   const navigate = useNavigate(); // Initialize useNavigate
   const menuType = location.state?.menuType || 'breakfast'; // Default to 'breakfast' if not passed

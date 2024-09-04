@@ -5,9 +5,12 @@ import page from "../assets/service4.png";
 import design3 from "../assets/design3.png";
 import "./Service.css";
 import Registr from "../../../homepages/homecomponents/Registr";
-
+import { useEffect } from 'react';
 
 const Service = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="service">

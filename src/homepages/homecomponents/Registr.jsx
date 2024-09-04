@@ -41,7 +41,7 @@ const Registr = () => {
           message: formData.message
         });
 
-        if (response.status === 200) {
+        if (response.status === 201) {
           setSuccessMessage('Your message has been sent successfully!');
           setFormData({ username: '', email: '', yourphone: '', message: '' });
           setErrors({});

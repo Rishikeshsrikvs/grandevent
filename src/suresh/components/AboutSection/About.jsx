@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from 'react';
 import pic1 from "../assets/pic1.png";
 import pic2 from "../assets/Baala.png";
 import foodposter from '../assets/food.png'
@@ -6,6 +7,9 @@ import './About.css'
 import lefttop from '../assets/design4.png'
 import Registr from "../../../homepages/homecomponents/Registr";
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="about">

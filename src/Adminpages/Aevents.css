@@ -17,14 +17,15 @@
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
-    padding: 4px ;
+    padding: 10px ;
 }
 .aeventtitlecon button{
     font-family: Outfit;
     font-size: 24px;
     font-weight: 600;
-    padding: 5px 10px;
-    
+    height: 43px;
+    padding: 2px 10px;
+    margin-top: 0;
     letter-spacing: 0.07em;
     text-align: left;
     color: #FFFFFF;
@@ -64,19 +65,37 @@ text-align: left;
 justify-content: space-evenly;
 align-items: center;
 text-align: center;
+padding: 2px;
 
+}
+.eventbuttonstr >div:hover{
+    background-color: gray;
 }
 .eadone{
     width: 47%;
     background-color: #1D8F3C;
     margin-bottom: 4px;
+    padding: 2px;
 }
 .eadeny{
     width: 40%;
     background-color: #F91B1B;
     margin-bottom: 4px;
+    padding: 2px;
 }
 .eamodify{
-    width: 90%;
+    width: 70%;
+    padding: 2px;
     background-color: #135CFF;
+}
+
+.aeventtitlecon button.atestname{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #141414;
+}
+.aeventtitlecon button.atestname SPAN{
+    font-weight: bolder;
 }

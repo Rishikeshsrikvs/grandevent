@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react';
 import Menu1container from './homecomponents/Menu1container';
 import './Menu.css';
 import mnbackleft from './../assets/menu/menubackleft.png';
@@ -8,6 +9,9 @@ import Menu2container from './homecomponents/Menu2container';
 
 const Menu = () => {
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   
   return (
     <div className='menuparent'>

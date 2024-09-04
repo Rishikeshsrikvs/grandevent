@@ -1,0 +1,135 @@
+.galmain{
+ background-color: #D9D9D9;
+ width: 80%;
+ 
+ padding: 3%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ align-items: center;
+ margin: 10px auto;
+
+
+}
+.galmain >h1{
+    font-family: Outfit;
+font-size: 27px;
+font-weight: 600;
+line-height: 40px;
+letter-spacing: 0.07em;
+
+
+}
+.galsub{
+    background-color:#141414 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    gap: 10px;
+    
+
+}
+
+.galin input[type=file]{
+    display: none;
+}
+.galin{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60px;
+}
+.galin p{
+    color: white;
+}
+.galin label{
+    font-family: Outfit;
+font-size: 16px;
+font-weight: 600;
+width: 80%;
+line-height: 40px;
+letter-spacing: 0.07em;
+text-align: left;
+color: #135CFF;
+background-color: white;
+white-space: nowrap;
+min-width: 200px;
+border-radius: 5px;
+
+max-width: 300px;
+
+text-align: center;
+}
+.galsub >button{
+    margin-top: 0;
+    background-color: transparent;
+    color: white;
+}
+.galsub >button:hover{
+    background-color: gray;
+    color: red;
+}
+.galline{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    align-items: center;
+    gap: 5px;
+    
+}
+.galline span{
+    color: white;
+}
+.galln{
+    flex: 1;
+    background-color: white;
+    height: 3px;
+}
+.gatit{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 80%;
+}
+.galtit label{
+    background-color: none;
+    white-space: nowrap;
+    width: 50%;
+    
+
+}
+.galtable{
+    width: 100%;
+    background-color: #141414;
+    border: 1px solid white;
+    border-collapse: collapse;
+    color: white;
+
+}
+.galtable th,.galtable td{
+    border: 1px solid white;
+    padding: 4px;
+}
+.gatno{
+    width: 10%;
+}
+.gatnone{
+    width: 20%;
+}
+.galdeletebtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.galdeletebtn button{
+    width: 60%;
+    background-color: #135CFF;
+    font-size: 13px;
+    color: white;
+    margin: 0;
+}

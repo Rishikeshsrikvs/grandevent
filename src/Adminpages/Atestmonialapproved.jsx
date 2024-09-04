@@ -4,7 +4,7 @@ import api from '../api/api'; // Ensure api is properly configured with Axios
 import { useAuth } from './auth/AuthContext';
 import test from './../assets/admin/testimonial.png';
 import './Aevents.css';
-const Atestimonial = () => {
+const Atestimonialapproved = () => {
   const navigate = useNavigate();
   const auth = useAuth();
   const token = auth.token;
@@ -13,13 +13,13 @@ const Atestimonial = () => {
 
   // Fetch testimonials from the API on component mount
   useEffect(() => {
-    api.get('/api/admin/testimonials', {
+    api.get('/api/admin/approvedTestimonial', {
       headers: {
         authorization: token // Ensure the token is passed correctly
       }
     })
     .then((response) => {
-      setTestimonials(response.data || []); // Ensure response is handled properly
+      setTestimonials(response.data.message || []); // Ensure response is handled properly
     })
     .catch((error) => {
       console.error("There was an error fetching the testimonials!", error);
@@ -28,10 +28,10 @@ const Atestimonial = () => {
 
   // Handler to cancel the testimonial
   const handleDenyClick = (testimonialId) => {
-    api.put('/api/admin/deleteTestimonial', 
-      {
-        testimonialId: testimonialId // Pass the testimonial ID in the request body
-      }, 
+    console.log(testimonialId);
+    
+    api.delete(`/api/admin/deleteTestimonial/${testimonialId}`, 
+     
       {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
@@ -51,7 +51,7 @@ const Atestimonial = () => {
 
   // Handler to mark the testimonial as done
   const handleDoneClick = (testimonialId) => {
-    api.put('/api/admin/approveTestimonial', 
+    api.put('/api/admin/testimonialDone', 
       {
         testimonialId: testimonialId // Pass the testimonial ID in the request body
       }, 
@@ -74,21 +74,21 @@ const Atestimonial = () => {
 
   return (
     <div className="adashmmain">
-      <h1>TESTIMONIALS</h1>
+      <h1>TESTIMONIALS / APPROVED</h1>
       <div className="aeventcon">
         <div className="aeventtitlecon">
-          <button className='atestname'>
+        <button className='atestname'>
           <span>
               <img src={test} alt="" />
             </span>
             <span>CLIENT FEEDBACK</span>
           </button>
-          <button onClick={() => navigate('/admin/SHRA/Approvedtestimonials')}>
+          {/* <button onClick={() => navigate('/admin/SHRA/Approvedtestimonials')}>
             <span>
               <img src="" alt="" />
             </span>
-            <span>Approved</span>
-          </button>
+            <span>Approved Testomonials</span>
+          </button> */}
         </div>
         <div className="aeventtable">
           <table>
@@ -111,9 +111,8 @@ const Atestimonial = () => {
                     <td>{testimonial.description}</td>
                     <td>
                       <div className="eventbuttonstr">
-                      <div className="eadone" onClick={() => handleDoneClick(testimonial._id)}>APPROVE</div>
-                      <div className="eadeny" onClick={() => handleDenyClick(testimonial._id)}>DENY</div>
-                      <div className="eamodify">MODIFY</div>
+                        <div className="eadeny" onClick={() => handleDenyClick(testimonial._id)}>DENY</div>
+                        <div className="eamodify" >MODIFY</div>
                       </div>
                     </td>
                   </tr>
@@ -131,4 +130,4 @@ const Atestimonial = () => {
   );
 };
 
-export default Atestimonial;
+export default Atestimonialapproved;

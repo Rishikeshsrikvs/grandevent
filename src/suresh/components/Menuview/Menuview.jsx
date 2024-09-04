@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useEffect } from 'react';
 import api from "../../../api/api";
 import "./Menuview.css";
 import img1 from "../Menuview/menuimage/Marriageimage.png";
@@ -10,6 +11,9 @@ import img6 from "../Menuview/menuimage/menuimg.png";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const Menuview = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
   const location = useLocation();
   const menuType = location.state?.menuType || "breakfast";

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Assuming you're using React Router
 import './Footer.css';
+import { NavLink } from 'react-router-dom';
 import logo from './../../assets/Header/logo.png';
 import facebook from './../../assets/footer/facebook.png';
 import instagram from './../../assets/footer/instagram.png';
@@ -26,7 +27,8 @@ const Footer = () => {
 
         <div className="footcenter">
           <h1>Quick Links</h1>
-          <Link to="/Home">Home</Link>
+         
+          <Link to="/">Home</Link>
           <Link to="/About">About Us</Link>
           <Link to="/menu">Menu</Link>
           <Link to="/Services">Services</Link>
@@ -42,7 +44,7 @@ const Footer = () => {
       </div>
       <div className="footsub">
         <p>Copyright 2024 All rights reserved Grand Events A to Z Marriage Catering Services.</p>
-        <p>Designed by<Link to=""> Sri KVS Tech</Link></p>
+        <p>Designed by<Link to="https://srikvstech.com/"  target="_blank"> Sri KVS Tech</Link></p>
       </div>
     </footer>
   );

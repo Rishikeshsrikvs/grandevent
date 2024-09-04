@@ -58,6 +58,9 @@
     align-items: center;
     gap: 5%;
 }
+.footcenter a:hover,.footsub p a:hover{
+    color: rgb(255, 123, 0);
+}
 .footright{
     margin-top: 2%;
     width: 30%;

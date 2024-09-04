@@ -1,5 +1,6 @@
 import React from 'react'
 import  { useState } from 'react';
+import { useEffect } from 'react';
 import './Land.css';
 import { useNavigate } from 'react-router-dom';
 import { Link, Navigate } from 'react-router-dom';
@@ -33,7 +34,9 @@ const Land = () => {
   const [isImageVisible, setIsImageVisible] = useState(true);
   const navigate = useNavigate();
 
-  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   
@@ -199,7 +202,9 @@ const Land = () => {
         <div className="l9con">
             <Reelslider/>
         </div>
-        <div className="land3wriereview"><button onClick={() => window.location.href = 'https://www.instagram.com/grandeventscatering/'}>FOR MORE FEEDS</button></div>
+        <div className="land3wriereview"><button onClick={() => window.open('https://www.instagram.com/grandeventscatering/', '_blank')}>
+  FOR MORE FEEDS
+</button></div>
       </div>
          
       <Registr/>

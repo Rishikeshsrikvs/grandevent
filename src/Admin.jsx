@@ -8,9 +8,15 @@ import Asettings from './Adminpages/Asettings';
 import Adminlogin from './Adminpages/Adminlogin';
 import Aevents from './Adminpages/Aevents';
 import Anewevents from './Adminpages/Anewevents';
+import Acontactus from './Adminpages/Acontactus';
+import Atestimonialapproved from './Adminpages/Atestmonialapproved';
 import Atestimonial from './Adminpages/Atestimonial';
+import Abrochure from './Adminpages/Abrochure';
+import Agalary from './Adminpages/Agalary';
+import Amenu from './Adminpages/Amenu';
 import Acanceledevents from './Adminpages/Acanceledevents';
 import ProtectedRoute from './Adminpages/auth/ProtectedRoute';
+import Aquote from './Adminpages/Aquote';
 import './Admin.css'; // Import the CSS file for styling
 
 const Admin = () => {
@@ -40,7 +46,14 @@ const Admin = () => {
                       <Route path="/new-events" element={<Anewevents />} />
                       <Route path="/cancelled-events" element={<Acanceledevents />} />
                       <Route path="/testimonial" element={<Atestimonial />} />
-
+                      <Route path="/Approvedtestimonials" element={<Atestimonialapproved />} />
+                      <Route path="/contactus" element={<Acontactus />} />
+                      <Route path="/quote" element={<Aquote />} />
+                      <Route path="/brochure" element={<Abrochure />} />
+                      <Route path="/gallery" element={<Agalary />} />
+                      <Route path="/menu" element={<Amenu />} />
+                      
+                      
                     </Routes>
                   </div>
                 </div>

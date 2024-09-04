@@ -15,7 +15,10 @@ const Asidebar = () => {
         <Link to="/admin/SHRA/dashboard">Dashboard</Link>
         </li>
         <li>
-        <Link to="/admin/SHRA/settings">settings</Link>
+        <Link to="/admin/SHRA/gallery">Gallery</Link>
+        </li>
+        <li>
+        <Link to="/admin/SHRA/menu">Menu</Link>
         </li>
         <li>
         <Link to="/admin/SHRA/events">Events</Link>
@@ -24,7 +27,13 @@ const Asidebar = () => {
         <Link to="/admin/SHRA/testimonial">Testimonial</Link>
         </li>
         <li>
-        <Link to="/admin/SHRA/dashboard">Dashboard</Link>
+        <Link to="/admin/SHRA/contactus">Contactus</Link>
+        </li>
+        <li>
+        <Link to="/admin/SHRA/quote">Quote</Link>
+        </li>
+        <li>
+        <Link to="/admin/SHRA/brochure">Brochure</Link>
         </li>
       </ul>
     </div>
