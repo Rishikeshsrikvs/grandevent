@@ -63,12 +63,12 @@ max-width: 300px;
 
 text-align: center;
 }
-.galsub >button{
+.galbtn >button{
     margin-top: 0;
     background-color: transparent;
     color: white;
 }
-.galsub >button:hover{
+.galbtn >button:hover{
     background-color: gray;
     color: red;
 }
@@ -88,16 +88,21 @@ text-align: center;
     background-color: white;
     height: 3px;
 }
-.gatit{
+.galtitle{
     display: flex;
     flex-direction: column;
     gap: 2px;
     width: 80%;
 }
+.galtitle label{
+    color: white;
+    white-space: nowrap;
+}
 .galtit label{
     background-color: none;
     white-space: nowrap;
     width: 50%;
+   
     
 
 }
@@ -132,4 +137,7 @@ text-align: center;
     font-size: 13px;
     color: white;
     margin: 0;
+}
+.gaimagetitle{
+    color: white;
 }

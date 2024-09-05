@@ -78,7 +78,7 @@ const Agalary = () => {
       console.error('Image delete error:', error);
     }
   };
-
+  
   return (
     <div className='adashmmain'>
       <h1>GALLERY</h1>
@@ -105,8 +105,8 @@ const Agalary = () => {
             <label htmlFor="">DRIVE</label>
             <input type="file" />
           </div>
-          <div className="gatit">
-            <label htmlFor="imageTitle">IMAGE TITLE</label>
+          <div className="galtitle">
+            <label htmlFor="imageTitle" className='gaimagetitle'>IMAGE TITLE</label>
             <input 
               type="text" 
               id="imageTitle" 
@@ -115,7 +115,7 @@ const Agalary = () => {
               required 
             />
           </div>
-          <button type="submit">SUBMIT</button>
+          <div className="galbtn"><button type="submit">SUBMIT</button></div>
           {message && <p className="success-message">{message}</p>}
         </form>
       </div>

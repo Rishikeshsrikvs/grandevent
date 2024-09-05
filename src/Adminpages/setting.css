@@ -1,0 +1,10 @@
+.separent{
+    width: 60vw;
+    height: 50vh;
+    position: relative;
+
+}
+.smain{
+ position: absolute;
+ width: 100%;
+}

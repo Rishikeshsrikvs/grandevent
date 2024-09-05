@@ -325,7 +325,7 @@ margin-top: 5px;
     
    
 }
-.l4left:hover{
+.l4left:hover,.l4rdown:hover,.lrup1:hover{
     transform: scale(1.05);
 }
 .land4imagecon div h1{
@@ -476,6 +476,10 @@ margin-top: 5px;
     margin-bottom:-5px ;
 
 
+}
+.l5btn:hover{
+    background-color: #1956ff;
+   
 }
 /* --------------- */
 .land6main{

@@ -14,6 +14,7 @@ import Atestimonial from './Adminpages/Atestimonial';
 import Abrochure from './Adminpages/Abrochure';
 import Agalary from './Adminpages/Agalary';
 import Amenu from './Adminpages/Amenu';
+import Qrcode from './Adminpages/Qrcode.jsx';
 import Acanceledevents from './Adminpages/Acanceledevents';
 import ProtectedRoute from './Adminpages/auth/ProtectedRoute';
 import Aquote from './Adminpages/Aquote';
@@ -52,6 +53,7 @@ const Admin = () => {
                       <Route path="/brochure" element={<Abrochure />} />
                       <Route path="/gallery" element={<Agalary />} />
                       <Route path="/menu" element={<Amenu />} />
+                      <Route path="/Qrcode" element={<Qrcode />} />
                       
                       
                     </Routes>

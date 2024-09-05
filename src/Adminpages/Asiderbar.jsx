@@ -35,6 +35,9 @@ const Asidebar = () => {
         <li>
         <Link to="/admin/SHRA/brochure">Brochure</Link>
         </li>
+        <li>
+        <Link to="/admin/SHRA/Qrcode">Qrcode</Link>
+        </li>
       </ul>
     </div>
   </div>

@@ -90,7 +90,7 @@
     min-height: 100px;
   }
   
-  button[type="submit"] {
+  button.sendbbtn[type="submit"] {
     padding: 5px 10px;
     background-color: #881400;
     color: #ffffff;
@@ -109,7 +109,7 @@
   }
 
   
-  button[type="submit"]:hover {
+  button.sendbbtn[type="submit"]:hover {
     background-color: #881400;
     display: flex;
    

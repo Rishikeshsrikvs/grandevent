@@ -89,14 +89,9 @@ const Acontactus = () => {
                   <td>{contact.message}</td>
                   <td>
                     <div className='eventbuttonstr'>
-                      <button 
-                        className="cadone" 
-                        onClick={() => handleDoneClick(contact._id)}
-                        style={{ backgroundColor: contact.done,color:'white' ? 'red' : '' }}
-                        disabled={contact.done} // Disable if already done
-                      >
-                        {contact.done ? 'CHECKED' : 'CHECK'}
-                      </button>
+                    {!contact.done && (
+                        <div className="cadone" onClick={() => handleDoneClick(contact._id)}>CHECK</div>
+                      )}
                     </div>
                   </td>
                 </tr>

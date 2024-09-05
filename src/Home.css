@@ -2,3 +2,46 @@
     width: 100%;
     height: 100vh;
 }
+
+.popupimage-overlay {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popupimage-container {
+    position: relative;
+    
+    padding: 30px;
+    border-radius: 8px;
+  }
+  
+  .popupimage-container > button {
+    position: absolute;
+    top: 0px;
+    right:0px;
+    
+    color: red;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .popupcloseimage-button{
+    background: transparent;
+  }
+  .popupclose-button:hover {
+    background-color: darkred;
+  }
+  
+   img {
+    max-width:90vh;
+    
+  }
+  

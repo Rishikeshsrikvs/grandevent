@@ -56,6 +56,9 @@
    }
    .galin p{
        color: white;
+       width: 100%;
+       font-size: 10px;
+       margin-top: 5px;
    }
    .galin label{
        font-family: Outfit;
@@ -77,8 +80,15 @@
    }
    .galbutton > button{
        margin-top: 0;
-       background-color: transparent;
+       background-color: black;
        color: white !important;
+   }
+   .galbutton > button:hover{
+    background-color: gray;
+   }
+   .galbutton{
+    width: 100%;
+    text-align: center;
    }
    .galsub >button:hover{
        background-color: gray;
@@ -148,18 +158,63 @@
    }
    .gatnone{
        width: 20%;
+
    }
    .galdeletebtn{
        display: flex;
-       flex-direction: column;
-       justify-content: center;
+       flex-direction: row;
+       justify-content: space-evenly;
        align-items: center;
+       padding: 4px;
      
    }
    .galdeletebtn button{
-       width: 60%;
+       width: 40%;
        background-color: #135CFF;
        font-size: 13px;
        color: white;
        margin: 0;
    }
+
+
+
+   .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    max-height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: red;
+  }
+  
+  .modal-image {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 20px;
+  }
+  

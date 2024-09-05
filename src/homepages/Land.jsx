@@ -31,7 +31,7 @@ import Getquote from './homecomponents/Getquote';
 import Sendmessage from './homecomponents/Sendmessage';
 const Land = () => {
 
-  const [isImageVisible, setIsImageVisible] = useState(true);
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -40,21 +40,20 @@ const Land = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   
-  const closeImageOverlay = () => {
-      setIsImageVisible(false);}
+ 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
   return (
     <div className='landparent'>
-       {isImageVisible && (
+       {/* {isImageVisible && (
         <div className="popupimage-overlay" onClick={closeImageOverlay}>
           <div className="popupimage-container" onClick={(e) => e.stopPropagation()}>
             <button className="popupcloseimage-button" onClick={closeImageOverlay}>X</button>
             <img src={landpopupimage} alt="Sample" />
           </div>
         </div>
-      )}
+      )} */}
       <div className="land1main">
           <div className="land1textcon">
             <div className="land1left">
@@ -100,7 +99,7 @@ const Land = () => {
           </div>
       </div>
       <div className="land3testmain">
-        <h1 className='land3title'>OUR <span>MILESTONE</span></h1>
+        <h1 className='land3title'>OUR <span>TESTIMONIALS</span></h1>
         <Testimonials/>
         {isModalOpen && <Sendmessage toggleModal={toggleModal} />}
         <div className="land3wriereview"><button  onClick={toggleModal}>Write review</button></div>

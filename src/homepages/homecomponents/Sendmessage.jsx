@@ -91,7 +91,7 @@ const Sendmessage = ({ toggleModal }) => {
           {successMessage && <div className="success-message">{successMessage}</div>}
           {errorMessage && <div className="error-message">{errorMessage}</div>}
 
-          <button type="submit">Submit</button>
+          <button type="submit" className='sendbbtn'>Submit</button>
         </form>
       </div>
     </div>
