@@ -89,8 +89,8 @@ const Land = () => {
               <h1 className='land2num'>123+</h1>
             </div>
             <div className="landcard">
-              <h1 className='land2txt'>EVENTS</h1>
-              <h1 className='land2num'>123+</h1>
+              <h1 className='land2txt'>YEARS</h1>
+              <h1 className='land2num'>12+</h1>
             </div>
             <div className="landcard">
               <h1 className='land2txt'>FEEDBACKS</h1>

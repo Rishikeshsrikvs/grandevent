@@ -1,5 +1,5 @@
 import React from "react";
-import "./HeroSection.css";
+import "./Herosection.css";
 import marriageimage1 from "../Marriageimages/Marriageimage.png";
 import ornam1 from "../Marriageimages/ellipse2.png"
 import ornam2 from "../Marriageimages/marriageornam.png"

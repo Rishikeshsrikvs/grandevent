@@ -38,7 +38,7 @@ const Gallery = () => {
               <div key={index} className="gallery-item">
                 {/* Directly setting the src URL */}
                 <img src={`${api.defaults.baseURL}/image/${item.imageName}`} alt={item.imageName} />
-                <p>{item.imageName}</p>
+                <p>{item.imageTitle}</p>
               </div>
             ))}
           </div>
