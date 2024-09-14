@@ -9,9 +9,10 @@ const Adminlogin = () => {
   const [showOtpPopup, setShowOtpPopup] = useState(false);
   const [adminEmail, setAdminEmail] = useState('rishikesh.srikvstech@gmail.com');
   const [adminPassword, setAdminPassword] = useState('Rishi27');
-  const [otp, setOtp] = useState(['', '', '', '', '', '']);
+  const [otp, setOtp] = useState(['', '', '', '', '', '']); // Store each digit in an array
   const [errorMessage, setErrorMessage] = useState('');
   const otpPopupRef = useRef(null);
+  const inputRefs = useRef([]); // Array to store input refs
   const navigate = useNavigate();
 
   // Access the auth context
@@ -64,14 +65,33 @@ const Adminlogin = () => {
   // Handle OTP input change
   const handleOtpChange = (e, index) => {
     const value = e.target.value;
-    if (/^\d*$/.test(value) && value.length <= 1) {
+
+    if (/^\d*$/.test(value)) { // Validate that the input is a digit
       const newOtp = [...otp];
       newOtp[index] = value;
       setOtp(newOtp);
 
-      if (index < otp.length - 1 && value) {
-        document.getElementById(`otp-${index + 1}`).focus();
+      // Move to the next input field if available
+      if (value && index < otp.length - 1) {
+        inputRefs.current[index + 1].focus();
       }
+    }
+  };
+
+  // Handle backspace key to move focus to the previous input
+  const handleOtpKeyDown = (e, index) => {
+    if (e.key === 'Backspace' && !otp[index] && index > 0) {
+      inputRefs.current[index - 1].focus();
+    }
+  };
+
+  // Handle pasting full OTP
+  const handlePaste = (e) => {
+    const pasteData = e.clipboardData.getData('text');
+    if (/^\d{6}$/.test(pasteData)) { // Only handle if exactly 6 digits are pasted
+      const newOtp = pasteData.split('');
+      setOtp(newOtp);
+      inputRefs.current[5].focus(); // Focus on the last input
     }
   };
 
@@ -81,17 +101,12 @@ const Adminlogin = () => {
 
     try {
       const response = await api.get(`/api/admin/verify/${otpValue}`, {
-        headers: { authorization: `${token}` },
-
-        // Use the token from AuthContext
+        headers: { authorization: `${token}` }, // Use the token from AuthContext
       });
 
       if (response.status === 200) {
-        login(response.data.jwt);
-        console.log(response.data.jwt);
-        navigate('/admin/SHRA/dashboard');
-
-         // Redirect to dashboard on successful OTP verification
+        login(response.data.jwt); // Update token
+        navigate('/admin/SHRA/dashboard'); // Redirect to dashboard on successful OTP verification
       } else {
         setErrorMessage('OTP verification failed. Please try again.');
       }
@@ -112,6 +127,7 @@ const Adminlogin = () => {
               <input
                 type="text"
                 value={adminEmail}
+                autoComplete="off"
                 onChange={(e) => setAdminEmail(e.target.value)}
               />
             </div>
@@ -120,6 +136,7 @@ const Adminlogin = () => {
               <input
                 type="password"
                 value={adminPassword}
+                autoComplete="off"
                 onChange={(e) => setAdminPassword(e.target.value)}
               />
             </div>
@@ -141,9 +158,13 @@ const Adminlogin = () => {
                     <input
                       key={index}
                       id={`otp-${index}`}
+                      ref={(el) => inputRefs.current[index] = el} // Store the input reference
                       type="text"
                       value={value}
+                      autoComplete="off"
                       onChange={(e) => handleOtpChange(e, index)}
+                      onKeyDown={(e) => handleOtpKeyDown(e, index)}
+                      onPaste={handlePaste}
                       maxLength="1"
                     />
                   ))}
