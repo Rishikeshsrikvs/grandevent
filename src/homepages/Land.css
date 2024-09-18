@@ -2,6 +2,7 @@
     width: 100%;
      background: #FFFAF6;
    overflow-x: hidden;
+   margin-top: 40px;
     
 }
 .land1main{
@@ -82,7 +83,15 @@ text-align: center;
     display: flex;
     flex-direction: row;
     gap: 30px;
+    position: sticky;
+    top: 0;
 }
+.land1iconleft img{
+    transition: transform 0.2s ease;
+} 
+.land1iconleft img:hover{
+   transform: scale(1.2);
+} 
 .land1iconright{
     display:flex;
     flex-direction: row;
@@ -235,7 +244,7 @@ margin-top: 5px;
 }
 .land3title{
     font-family: Outfit;
-    font-size: 48px;
+    font-size: 35px;
     font-weight: 700;
     line-height: 60.48px;
     text-align: center;
@@ -260,9 +269,10 @@ margin-top: 5px;
     color: white;
     background-color: #F06D27;
     border-radius: 8px;
-   padding: 7px 30px;
-    
-    
+   padding: 7px 28px;
+}
+.land3wriereview button:hover{
+    background-color: black;
 }
 .land4main{
     padding: 5%;
@@ -575,7 +585,9 @@ margin-top: 5px;
 }
 
 @media (max-width: 768px){
-
+    .land1main{
+        height: unset;
+    }
 .land1right{
     display: none;
 }
@@ -598,6 +610,11 @@ margin-top: 5px;
 }
 .land1iconleft{
     flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+.land1iconleft img{
+    width: 30px;
 }
 .land1iconcon{
     height: auto;
@@ -944,9 +961,9 @@ margin-top: 5px;
     width: 59.5%;
 }
 .l9con{
-    width: 70%;
-    height: 40vh;
-    border: 2px solid black;
+    width: 90%;
+    height: unset;
+    
     margin: 6vh auto;
 
 }

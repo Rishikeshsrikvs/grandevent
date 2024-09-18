@@ -48,6 +48,13 @@
     display: flex;
     gap: 10%;
     align-items: center;
+    padding-left: 15px;
+}
+.footiconcon a img{
+    transition: transform 0.2s ease;
+}
+.footiconcon a img:hover{
+    transform: scale(1.2);
 }
 .footcenter{
     width: 25%;
@@ -143,7 +150,8 @@
         width: 16px;
     }
     .footcenter{
-        width: 30%;
+        width: 35%;
+        gap: 10px;
        
     }
     .footright{
@@ -155,11 +163,11 @@
         font-size: 13px;
     }
     .footsub p{
-        font-size: 13px;
+        font-size: 11px;
         color: #FFFFFF;
     }
     .footsub{
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 5px;
         align-items: flex-start;
     }

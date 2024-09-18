@@ -5,6 +5,9 @@ import api from '../api/api';
 
 const Menudetail = () => {
   const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { itemId, menuType } = location.state; // Extract itemId and menuType from state
   const [menuDetail, setMenuDetail] = useState(null);
   console.log(`${api.defaults.baseURL}/${menuType}Image/${itemId}`);

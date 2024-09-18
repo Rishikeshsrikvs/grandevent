@@ -1,114 +1,116 @@
 .getquote-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.getquote-button {
+  background-color: #1E31FB;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: -30px;
+}
+
+.getquote-button:hover {
+  background-color: #626fff;
+}
+
+.land1right {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF3D;
+  align-items: center;
+  border-radius: 10px;
+  margin-right: 40px;
+  justify-content: space-evenly;
+  padding: 4%;
+  gap: 10px;
+}
+
+.land1right > input,
+.land1righttitle,
+.land1right > select {
+  width: 90%;
+  height: 40px;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30.24px;
+}
+
+.land1right option {
+  color: black;
+}
+
+.land1righttitle {
+  background-color: #FFFFFF;
+  color: black;
+  border-radius: 5px;
+  font-family: Outfit;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30.24px;
+  text-align: center;
+}
+
+.land1right > input::placeholder {
+  font-family: Outfit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30.24px;
+  color: #FFFFFF;
+}
+
+.land1right > input:focus,
+.land1right > select:focus {
+  outline: none;
+}
+
+.land1right > input[type=button] {
+  background-color: #1E31FB;
+  border: none;
+}
+
+.land1right > input[type=button]:hover {
+  background-color: #626fff;
+}
+
+.success-message {
+  color: rgb(137, 224, 137);
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Small screen styles */
+@media (max-width: 768px) {
+  .land1right { 
+    display: none;
+    width: 70vw;
+    margin: 0 auto;
+    margin-top: 10vh;
+
   }
-  
+
   .getquote-button {
-    background-color: #1E31FB;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  
-  .getquote-button:hover {
-    background-color: #626fff;
-  }
-  
-  .land1right {
-    width: 450px;
-    display: flex;
-    flex-direction: column;
-    background-color: #FFFFFF3D;
-    align-items: center;
-    border-radius: 10px;
-    margin-right: 40px;
-    justify-content: space-evenly;
-    padding: 4%;
-    gap: 10px;
-  }
-  
-  .land1right > input,
-  .land1righttitle,
-  .land1right > select {
-    width: 90%;
-    height: 40px;
-    padding: 5px 10px;
-    background-color: transparent;
-    color: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    border-radius: 4px;
-    font-family: Outfit;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 30.24px;
-  }
-  
-  .land1right option {
-    color: black;
-  }
-  
-  .land1righttitle {
-    background-color: #FFFFFF;
-    color: black;
-    border-radius: 5px;
-    font-family: Outfit;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 30.24px;
-    text-align: center;
-  }
-  
-  .land1right > input::placeholder {
-    font-family: Outfit;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 30.24px;
-    color: #FFFFFF;
-  }
-  
-  .land1right > input:focus,
-  .land1right > select:focus {
-    outline: none;
-  }
-  
-  .land1right > input[type=button] {
-    background-color: #1E31FB;
-    border: none;
-  }
-  
-  .land1right > input[type=button]:hover {
-    background-color: #626fff;
-  }
-  
-  .success-message {
-    color: green;
-    margin-top: 10px;
-  }
-  
-  .error-message {
-    color: red;
-    margin-top: 10px;
-  }
-  
-  /* Small screen styles */
-  @media (max-width: 768px) {
-    .land1right {
-      display: none;
-    }
-    
-    .getquote-button {
-      display: block;
-    }
+    display: block;
   }
   
   /* Show form when visible */
-  @media (max-width: 768px) {
-    .land1right.show {
-      display: flex;
-    }
+  .land1right.show {
+    display: flex;
   }
-  
+}

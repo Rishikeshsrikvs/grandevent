@@ -22,12 +22,13 @@ function Reelslider() {
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={'auto'}
+        slidesPerView={'3'}
+        spaceBetween={60}
         coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 2.5,
+          // rotate: 0,
+          // stretch: 5,
+          // depth: 49,
+          // modifier: 2.0,
         }}
         pagination={{ clickable: true }}
         navigation={true}
@@ -35,19 +36,19 @@ function Reelslider() {
         className="swiper_container"
       >
         {/* Add video slides */}
-        <SwiperSlide>
+        <SwiperSlide className='reelslide'>
           <video src={video_1} autoPlay controls muted playsInline />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='reelslide' >
           <video src={video_2} autoPlay controls muted playsInline />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='reelslide'>
           <video src={video_3} autoPlay controls muted playsInline />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='reelslide'>
           <video src={video_4} autoPlay controls muted playsInline />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='reelslide'>
           <video src={video_1} autoPlay controls muted playsInline />
         </SwiperSlide>
 

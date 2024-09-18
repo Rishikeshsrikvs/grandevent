@@ -11,7 +11,7 @@ const Menu2container = () => {
         api.get(`/differ`)
           .then(response => {
             setMenuItems(response.data);
-            console.log(response.data);
+
           })
           .catch(error => {
             console.error('Error fetching menu data:', error);

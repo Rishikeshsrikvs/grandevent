@@ -83,7 +83,7 @@
 }
 .map-inner-container .row iframe{
     width: 70vw;
-    height: 50vh;
+    height: 100%;
     border-radius: 5px;
 }
 /* .map-inner-container .row h3{
@@ -353,7 +353,7 @@ li{
         
     }
     .map-inner-container .row{
-        height: 160px;
+        height: 130px;
         border: 1px solid ;
        
     }
@@ -370,5 +370,8 @@ li{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .map-inner-container .row iframe{
+        height: 200px;
     }
 }

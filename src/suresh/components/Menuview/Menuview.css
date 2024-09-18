@@ -1,6 +1,6 @@
 .menuview {
   width: 100%;
-  margin: 3rem auto;
+  padding-top: 200px;
   background: #fffaf6;
 }
 .menuview .menu-heading h1 {

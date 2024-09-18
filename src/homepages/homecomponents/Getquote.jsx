@@ -70,6 +70,7 @@ const Getquote = () => {
         setContact('');
         setLocation('');
         setService('');
+        setIsFormVisible(false);
       }
     } catch (error) {
       setErrorMessage('There was an error submitting your request. Please try again.');
@@ -88,9 +89,10 @@ const Getquote = () => {
           Get Quote
         </button>
       )}
-      
+
+      {/* Conditionally add the "show" class if isFormVisible is true */}
       {(isFormVisible || !isSmallScreen) && (
-        <div className="land1right">
+        <div className={`land1right ${isFormVisible ? 'show' : ''}`}>
           <div className='land1righttitle'>Get your Quote</div>
           <input
             type="text"
@@ -126,7 +128,7 @@ const Getquote = () => {
             onClick={handleSubmit}
           />
           
-          {successMessage && <div className="success-message">{successMessage}</div>}
+          {/* {successMessage && <div className="success-message">{successMessage}</div>} */}
           {errorMessage && <div className="error-message">{errorMessage}</div>}
         </div>
       )}

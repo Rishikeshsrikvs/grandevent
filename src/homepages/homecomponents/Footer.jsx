@@ -37,7 +37,7 @@ const Footer = () => {
 
         <div className="footright">
           <h1>Contact Us</h1>
-          <p>'Grand Events A to Z Marriage Catering Services' #16, Kumaran Nagar, First St, Avadi, Chennai-71</p>
+          <p>'Grand Events A to Z Marriage Catering Services'<br/> #16, Kumaran Nagar, First St, Avadi, Chennai-71</p>
           <p>Phone: +91 94448 85453 / 73582 80982</p>
           <p>Email: grandeventsavadi@gmail.com</p>
         </div>
