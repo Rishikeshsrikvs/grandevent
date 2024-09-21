@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footsub">
-        <p>Copyright 2024 All rights reserved Grand Events A to Z Marriage Catering Services.</p>
+        <p>© Copyright 2024 All rights reserved Grand Events A to Z Marriage Catering Services.</p>
         <p>Designed by<Link to="https://srikvstech.com/"  target="_blank"> Sri KVS Tech</Link></p>
       </div>
     </footer>

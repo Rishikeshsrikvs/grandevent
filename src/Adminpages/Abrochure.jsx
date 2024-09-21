@@ -71,7 +71,7 @@ const Abrochure = () => {
 
   return (
     <div className="adashmmain">
-      <h1>Quotes</h1>
+      <h1>Brochure</h1>
       <div className='contactformcon'>
         <table>
           <thead>
@@ -86,7 +86,7 @@ const Abrochure = () => {
           <tbody>
             {sortedContacts && sortedContacts.length > 0 ? (
               sortedContacts.map((contact) => (
-                <tr key={contact._id} className='contactdetail' style={{ backgroundColor: contact.done ? 'lightgreen' : 'inherit' }}>
+                <tr key={contact._id} className='contactdetail' style={{ backgroundColor: contact.done ? 'lightgreen' : 'white' }}>
                   <td>{contact.contactName}</td>
                   <td>{contact.contact}</td>
                   <td>{contact.loction}</td> {/* Fixed field */}

@@ -39,7 +39,7 @@
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   height: 30vh;
   padding-top: 90px;
   text-transform: uppercase;
@@ -53,14 +53,17 @@
 }
 .service .servicecontainer .content {
   display: flex;
+  width: 80%;
+  margin: 0 auto;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 30px;
 }
 .service .servicecontainer .content .para {
-  width: 714px;
-  font-size: 22px;
+  width: 60%;
+  font-size: 26px;
+ 
   letter-spacing: 0.04rem;
   padding: 10px;
   font-weight: 400;
@@ -91,7 +94,7 @@
   margin: 6.5rem auto;
 }
 .section-box .box-content {
-  width: 98%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -113,6 +116,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   background-image: url(../assets/design.png);
 
 }
@@ -136,14 +140,14 @@
   
 }
 .main-service .main-box {
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
   border: none solid #fff;
-  padding: 20px;
+  padding: 30px 40px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.18) 0px 5px 36px 2px,
     rgba(0, 0, 0, 0.02) 0px 0px 0px 1px;
@@ -179,7 +183,7 @@
   font-family: "Outfit", serif;
   list-style: none;
   color: #f06d27;
-  grid-gap: 20px;
+  grid-gap: 10px;
 }
 
 

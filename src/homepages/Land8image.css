@@ -1,0 +1,107 @@
+.land8main {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .land4title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .l8con {
+    margin: 10vh auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Adds space between the images */
+  }
+  
+  .l8con div img {
+    object-fit: cover; /* Ensures the image fully covers the container */
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+  }
+  
+  .l81, .l84 {
+    width: 19%;
+    aspect-ratio: 1; /* Keeps the images perfectly square */
+  }
+  
+  .l82, .l83 {
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+  }
+  
+  .l82up, .l82down, .l83up, .l83down {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .l82down, .l83up {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .l82left, .l83left, .l82right, .l83right {
+    width: 50%;
+    height: auto;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .land8main {
+      margin-bottom: 20px;
+    }
+  
+    .l8con {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .l81, .l84 {
+      width: 48%; /* Adjusted to take 2 columns in mobile */
+      aspect-ratio: 1; /* Maintain square aspect ratio */
+    }
+  
+    .l82, .l83 {
+      width: 100%;
+      gap: 10px;
+    }
+  
+    .l82up, .l82down, .l83up, .l83down {
+      height: auto; /* Let the height adjust naturally on small screens */
+      flex-direction: row;
+    }
+  
+    .l82left, .l83left, .l82right, .l83right {
+      width: 48%; /* Each small image takes up 48% of the width */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .land4title {
+      font-size: 1.5rem;
+    }
+  
+    .l81, .l84 {
+      width: 100%; /* Full width for very small screens */
+      aspect-ratio: auto;
+    }
+  
+    .l82up, .l82down, .l83up, .l83down {
+      flex-direction: column; /* Stacked layout for images */
+    }
+  
+    .l82left, .l83left, .l82right, .l83right {
+      width: 100%; /* Full width for smaller images on mobile */
+    }
+  }
+  

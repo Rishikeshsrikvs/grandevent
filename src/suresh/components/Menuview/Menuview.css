@@ -1,11 +1,11 @@
 .menuview {
   width: 100%;
-  padding-top: 200px;
+  padding-top: 100px;
   background: #fffaf6;
 }
 .menuview .menu-heading h1 {
   font-size: 70px;
-  margin: 7rem auto;
+  margin: 1rem auto;
   font-family: "Outfit";
   font-weight: 700;
   margin-left: 2rem;
@@ -19,8 +19,8 @@
   display: flex;
   align-items: center;
   background-color: #800000;
-  height: 90vh;
-  margin: 10rem auto;
+  height: 80vh;
+  margin: 1rem auto;
   flex-wrap: wrap;
   width: 100%;
 }

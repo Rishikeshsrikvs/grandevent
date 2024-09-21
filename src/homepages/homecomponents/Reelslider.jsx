@@ -25,10 +25,11 @@ function Reelslider() {
         slidesPerView={'3'}
         spaceBetween={60}
         coverflowEffect={{
-          // rotate: 0,
-          // stretch: 5,
-          // depth: 49,
-          // modifier: 2.0,
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false
         }}
         pagination={{ clickable: true }}
         navigation={true}

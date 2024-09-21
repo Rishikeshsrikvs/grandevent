@@ -37,7 +37,7 @@
 .about .aboutcontainer .abtheading {
   flex-direction: column;
   margin: 0 auto;
-  height: 300px;
+  height: 200px;
   text-align: center;
   font-family: "Outfit";
   /* background-image: url(../assets/design.png); */
@@ -47,6 +47,7 @@
 .aboutcontainer .abtheading h1 {
   font-size: 48px;
   color: #000;
+  margin-top: 2vh;
   
 }
 .aboutcontainer .abtheading h2 {
@@ -95,6 +96,7 @@
 }
 .about-details {
   width: 100%;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,9 +113,18 @@
   background-image: url(../assets/design.png);
   background-repeat: repeat;
   flex-wrap: wrap;
+  padding: 2%;
+}
+.food-poster{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
 }
 .about-details .about-details-content p {
-  width: 680px;
+  width: 60%;
   line-height: 2rem;
   font-size: 24px;
   letter-spacing: 0.9px;
@@ -124,10 +135,10 @@
   padding-left: 28px;
 }
 .about-details .about-details-content .poster {
-  width: 420px;
-  height: 246px;
+  width: 80%;
+  
   border-radius: 15px;
-  margin-right: 8rem;
+  margin: 0 auto;
 }
 
 

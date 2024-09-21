@@ -10,21 +10,9 @@ const Menudetail = () => {
   }, []);
   const { itemId, menuType } = location.state; // Extract itemId and menuType from state
   const [menuDetail, setMenuDetail] = useState(null);
-  console.log(`${api.defaults.baseURL}/${menuType}Image/${itemId}`);
+ 
   
-  // useEffect(() => {
-  //   // Fetch menu detail data from the API using itemId and menuType
-  //   api.get(`/${menuType}/${itemId}`)
-  //     .then(response => {
-  //       setMenuDetail(response.data);
-  //       console.log(response.data);
-  //       console.log(`${api.defaults.baseURL}/${menuType}PDF/${menuDetail._id}`);
-        
-  //     })
-  //     .catch(error => {
-  //       console.error('Error fetching menu detail data:', error);
-  //     });
-  // }, [itemId, menuType]);
+
 
   return (
     <div className='menudetailparent'>

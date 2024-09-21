@@ -28,23 +28,23 @@ const Connect = () => {
                 </div>
                 <div className="address-box">
                  
-                  <div class="icon">
+                  <div className="icon">
                     <ul>
                       <li>
                         <span>
-                          <i class="fa-solid fa-map-location-dot"></i>
+                          <i className="fa-solid fa-map-location-dot"></i>
                         </span>
                       </li>
                       <li></li>
                       <li>
                         <span>
-                          <i class="fa-solid fa-envelope"></i>
+                          <i className="fa-solid fa-envelope"></i>
                         </span>
                       </li>
                       <li></li>
                       <li>
                         <span>
-                          <i class="fa-solid fa-phone"></i>
+                          <i className="fa-solid fa-phone"></i>
                         </span>
                       </li>
                       <li></li>

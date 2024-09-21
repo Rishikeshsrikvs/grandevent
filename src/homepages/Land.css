@@ -163,6 +163,7 @@ margin-top: 5px;
     flex-direction: column;
     align-items: center;
     height: 290px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 .land2txt{
     width: 100%;
@@ -236,7 +237,7 @@ margin-top: 5px;
 /* --------------------- */
 .land3testmain{
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -256,7 +257,7 @@ margin-top: 5px;
 }
 .land3wriereview{
   
-    margin: 40px auto;
+    margin: 10px auto;
     text-align: center;
 
 }
@@ -270,6 +271,7 @@ margin-top: 5px;
     background-color: #F06D27;
     border-radius: 8px;
    padding: 7px 28px;
+   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 .land3wriereview button:hover{
     background-color: black;
@@ -294,18 +296,18 @@ margin-top: 5px;
     color: #FF5900;
 }
 .land4titlesub{
-    margin: 20px 0;
+    
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin: 100px 0;
+    gap: 17px;
+    margin: 50px 0;
 
    
 }
 .land4titlesub p{
     color: #7C1109;
     font-family: Outfit;
-    font-size: 24px;
+    font-size: 29px;
     font-weight: 600;
     line-height: 41px;
     text-align: left;
@@ -319,6 +321,7 @@ margin-top: 5px;
     margin: 10px;
     text-align: left;
     color: #4B00B4;
+    text-shadow: 8px 4px 2px hsl(200 50% 30%);
 
 }
 .land4imagecon{
@@ -423,16 +426,18 @@ margin-top: 5px;
 .land5con{
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     width: 90%;
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
 }
 .land5cardmain{
-    width: 33.33%;
-    padding: 1vh;
-    height: 1;
+    width: 30.33%;
+    border-radius: 10px;
+    height: 300px;
+    margin-bottom: 4vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
 .land5card{
@@ -444,6 +449,7 @@ margin-top: 5px;
     border-radius: 10px;
     margin-bottom: 10px;
     background-color: #F06D27;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .l5cardimg{
     
@@ -454,13 +460,14 @@ margin-top: 5px;
     align-items: center;;
     width: 100%;
     border-radius: 10px;
-    height: 60%;
+    height: 65%;
     padding: 10px;
 }
 .l5cardimg img{
     width: 100%;
     height: 100%;
     object-fit: contain;
+    border-radius: 5px;
  
     
 }
@@ -513,59 +520,7 @@ margin-top: 5px;
     border-radius: 5px;
 }
  /* ----------------- */
-.land8main{
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-}
-.l8con{
-    margin: 10vh auto;
-    width: 90%;
-    height: 40vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.l8con div{
-   
-   justify-content: space-between;
-}
-.l8con div img{
-    width: 100%;
-    height: 100%;
-}
-.l81,.l84{
-    
-    width: 19%;
-    height: 100%;
-    
-}
-.l82,.l83{
-    display: flex;
-    flex-direction: column;
-    width: 29%;
-    height: 100%;
-}
-.l82up,.l82down,.l83up,.l83down{
-    height: 49%;
-    width: 100%;
-    
-}
-.l82down,.l83up{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-}
-.l82left,.l83left,.l82right,.l83right{
-        width: 49%;
-        height: 100%;
-}
+
 
 
 .land9main{
@@ -942,24 +897,7 @@ margin-top: 5px;
     text-align: center;
     margin: 2vh 0;
 }
-.land8main{
-    margin-bottom: 20px;
-}
-.l8con{
-    flex-wrap: wrap;
-    height:auto;
-    
-}
-.l8con > div{
-    height: 30vh;
-    margin-bottom: 5px;
-}
-.l81,.l84{
-    width: 40%;
-}
-.l82,.l83{
-    width: 59.5%;
-}
+
 .l9con{
     width: 90%;
     height: unset;

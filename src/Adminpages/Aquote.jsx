@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import api from '../api/api'; // Ensure api is properly configured with Axios
 import { useAuth } from './auth/AuthContext';
-import './Aevents.css';
+
 import './Acontactus.css';
 
 const Aquote = () => {
@@ -21,7 +21,7 @@ const Aquote = () => {
     })
       .then((response) => {
         setContacts(response.data); 
-        console.log(response.data);
+        
         
         
       })
@@ -32,7 +32,7 @@ const Aquote = () => {
 
   // Handler to check the contact (mark as done)
   const handleDoneClick = (contactId) => {
-    console.log('Function triggered', token);
+   
 
     api.put(`/api/admin/quotesCheck/${contactId}`, 
       {}, // Assuming no request body needed
@@ -45,7 +45,7 @@ const Aquote = () => {
     )
     .then((response) => {
        
-        console.log(response.data);
+     
         
       console.log('Contact marked as done successfully', response.data);
       // Optionally, remove the completed contact from the UI or refetch contacts
@@ -82,7 +82,7 @@ const Aquote = () => {
           <tbody>
             {sortedContacts && sortedContacts.length > 0 ? (
               sortedContacts.map((contact) => (
-                <tr key={contact._id} className='contactdetail' style={{ backgroundColor: contact.done ? 'lightgreen' : 'inherit' }}>
+                <tr key={contact._id} className='contactdetail' style={{ backgroundColor: contact.done ? 'lightgreen' : 'white' }}>
                   <td>{contact.contactName}</td>
                   <td>{contact.contact}</td>
                   <td>{contact.location}</td>

@@ -16,18 +16,12 @@ import dinner from './../assets/land/dinner.png';
 import more from './../assets/land/more.png';
 import land6 from './../assets/land/land6back.png';
 import landpopupimage from './../assets/land/landpopup.png';
-import l1 from './../assets/land/landsub/l1.png';
-import l2up from './../assets/land/landsub/l2up.png';
-import l3down from './../assets/land/landsub/l3down.png';
-import l4 from './../assets/land/landsub/l4.png';
-import l21 from './../assets/land/landsub/l21.png';
-import l22 from './../assets/land/landsub/l22.png';
-import l31 from './../assets/land/landsub/l31.png';
-import l32 from './../assets/land/landsub/l32.png';
+
 import Reelslider from './homecomponents/Reelslider';
 import Registr from './homecomponents/Registr';
 import Testimonials from './homecomponents/Testimonials';
 import Getquote from './homecomponents/Getquote';
+import Land8image from './Land8image';
 import Sendmessage from './homecomponents/Sendmessage';
 const Land = () => {
 
@@ -171,31 +165,9 @@ const Land = () => {
           <img src={land6} alt="" />
       </div>
       <div className="land7utubecon">
-      <iframe width="80%" height="90%" src="https://www.youtube.com/embed/InisDKvXU3o?si=k3TUk7dNeUL5djFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="80%" height="90%" src="https://www.youtube.com/embed/InisDKvXU3o?si=k3TUk7dNeUL5djFI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullscreen></iframe>
       </div>
-      <div className="land8main">
-        <h1 className='land4title'>GRAP THE MOMENTS</h1>
-        <div className="l8con">
-          <div className="l81">
-            <img src={l1} alt="" />
-          </div>
-          <div className="l82">
-            <div className="l82up"> <img src={l2up} alt="" /></div>
-            <div className="l82down">
-                <div className='l82left'> <img src={l22} alt="" /></div>
-                <div className='l82right'> <img src={l21} alt="" /></div>
-            </div>
-          </div>
-          <div className="l83">
-          <div className="l83up">
-                <div className='l83left'> <img src={l31} alt="" /></div>
-                <div className='l83right'> <img src={l32} alt="" /></div>
-            </div>
-            <div className="l83down"> <img src={l3down} alt="" /></div>
-          </div>
-          <div className="l84"> <img src={l4} alt="" /></div>
-        </div>
-      </div>
+      <Land8image/>
       <div className="land9main">
         <h1 className='land4title'>REELS</h1>
         <div className="l9con">

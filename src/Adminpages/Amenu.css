@@ -152,6 +152,7 @@
    .galtable th,.galtable td{
        border: 1px solid white;
        padding: 4px;
+       text-align: center;
    }
    .gatno{
        width: 10%;

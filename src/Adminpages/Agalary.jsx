@@ -130,7 +130,7 @@ const Agalary = () => {
         <tbody>
           {imageList.length > 0 ? (
             imageList.map((image, index) => (
-              <tr key={image._id}>
+              <tr key={image.imageTitle}>
                 <td>{index + 1}</td>
                 <td>{image.imageTitle}</td>
                 <td className='galdeletebtn'>

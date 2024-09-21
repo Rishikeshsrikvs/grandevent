@@ -1,5 +1,5 @@
 .contactformcon{
-    background-color:#D9D9D9 ;
+    background-color:black;
     margin-top: 20px;
 
 }
@@ -8,11 +8,13 @@
     border: none;
 }
 .contactformcon tr{
-    background-color:#FFFFFF ;
+    background-color:white;
 }
+
 .contactformcon th,.contactformcon td{
-   
+   padding: 4px;
     border: none;
+    text-align: center;
 }
 .cadone{
     background-color: green;
