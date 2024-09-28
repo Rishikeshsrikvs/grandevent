@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import './Land8image.css';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 import l1 from './../assets/land/landsub/l1.png';
 import l2up from './../assets/land/landsub/l2up.png';
 import l3down from './../assets/land/landsub/l3down.png';
@@ -11,10 +12,18 @@ import l31 from './../assets/land/landsub/l31.png';
 import l32 from './../assets/land/landsub/l32.png';
 
 const Land8image = () => {
+  useEffect(() => {
+    
+    window.scrollTo(0, 0);
+    AOS.init({
+      duration: 2000, // Animation duration in ms
+      once: false,     // Whether animation should happen only once
+    });
+  }, []);
   return (
     <div className="land8main">
-      <h1 className='land4title'>GRAB THE MOMENTS</h1>
-      <div className="l8con">
+      <h1 className='land4title'  data-aos="zoom-in">GRAB THE MOMENTS</h1>
+      <div className="l8con"  data-aos="zoom-out">
         <div className="l81">
           <img src={l1} alt="Large Image" />
         </div>

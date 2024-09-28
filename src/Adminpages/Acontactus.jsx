@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import api from '../api/api'; // Ensure api is properly configured with Axios
-import { useAuth } from './auth/AuthContext';
-import './Aevents.css';
-import './Acontactus.css';
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import api from "../api/api"; // Ensure api is properly configured with Axios
+import { useAuth } from "./auth/AuthContext";
+import "./Aevents.css";
+import "./Acontactus.css";
 
 const Acontactus = () => {
   const navigate = useNavigate();
@@ -18,11 +18,12 @@ const Acontactus = () => {
   }, [token]);
 
   const fetchContacts = () => {
-    api.get('/api/admin/contact', {
-      headers: {
-        authorization: token, // Include the token with Bearer schema
-      },
-    })
+    api
+      .get("/api/admin/contact", {
+        headers: {
+          authorization: token, // Include the token with Bearer schema
+        },
+      })
       .then((response) => {
         // Sort contacts by 'done' status and date
         const sortedContacts = response.data.sort((a, b) => {
@@ -35,36 +36,38 @@ const Acontactus = () => {
         setContacts(sortedContacts); // Set the contacts data from the response
       })
       .catch((error) => {
-        console.error('There was an error fetching the contacts!', error);
+        console.error("There was an error fetching the contacts!", error);
       });
   };
 
   // Handler to mark the contact as done
   const handleDoneClick = (contactId) => {
-    console.log('Function triggered', token);
+    console.log("Function triggered", token);
 
-    api.put(`/api/admin/contactCheck/${contactId}`, 
-      {}, // Assuming no request body needed
-      {
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-          authorization: token, // Add the authorization token with Bearer schema
-        },
-      }
-    )
-    .then((response) => {
-      console.log('Contact marked as done successfully', response.data);
-      fetchContacts(); // Refetch contacts after marking as done
-    })
-    .catch((error) => {
-      console.error('There was an error marking the contact as done!', error);
-    });
+    api
+      .put(
+        `/api/admin/contactCheck/${contactId}`,
+        {}, // Assuming no request body needed
+        {
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+            authorization: token, // Add the authorization token with Bearer schema
+          },
+        }
+      )
+      .then((response) => {
+        console.log("Contact marked as done successfully", response.data);
+        fetchContacts(); // Refetch contacts after marking as done
+      })
+      .catch((error) => {
+        console.error("There was an error marking the contact as done!", error);
+      });
   };
 
   return (
     <div className="adashmmain">
       <h1>CONTACTS</h1>
-      <div className='contactformcon'>
+      <div className="contactformcon">
         <table>
           <thead>
             <tr>
@@ -78,19 +81,26 @@ const Acontactus = () => {
           <tbody>
             {contacts && contacts.length > 0 ? (
               contacts.map((contact) => (
-                <tr 
-                  key={contact._id} 
-                  className='contactdetail'
-                  style={{ backgroundColor: contact.done ? 'lightgreen' : '#FFFFFF' }} // Green background if done is true
+                <tr
+                  key={contact._id}
+                  className="contactdetail"
+                  style={{
+                    backgroundColor: contact.done ? "lightgreen" : "#FFFFFF",
+                  }} // Green background if done is true
                 >
                   <td>{contact.contactName}</td>
                   <td>{contact.contact}</td>
                   <td>{contact.email}</td>
                   <td>{contact.message}</td>
                   <td>
-                    <div className='eventbuttonstr'>
-                    {!contact.done && (
-                        <div className="cadone" onClick={() => handleDoneClick(contact._id)}>CHECK</div>
+                    <div className="eventbuttonstr">
+                      {!contact.done && (
+                        <div
+                          className="cadone"
+                          onClick={() => handleDoneClick(contact._id)}
+                        >
+                          CHECK
+                        </div>
                       )}
                     </div>
                   </td>

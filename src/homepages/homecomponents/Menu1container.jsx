@@ -1,11 +1,13 @@
 import React from 'react'
 import './../Menu.css';
+import { useEffect } from 'react';
 import m11 from './../../assets/menu/m11.png';
 import m12 from './../../assets/menu/m12.png';
 import m21 from './../../assets/menu/m21.png';
 import m22 from './../../assets/menu/m22.png';
 import m3 from './../../assets/menu/m3.png';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import n11 from './../../assets/menu/n11.png';
 import n12 from './../../assets/menu/n12.png';
@@ -15,9 +17,17 @@ import n3 from './../../assets/menu/n3.png';
 import { useNavigate } from 'react-router-dom';
 const Menu1container = () => {
     const navigate = useNavigate();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        AOS.init({
+          duration: 2000, // Animation duration in ms
+          once: false,     // Whether animation should happen only once
+        });
+      }, []);
+
   return (
     <div className="menu1container">
-                <div className="manu1up">
+                <div className="manu1up" data-aos="zoom-in">
                     <div className="mn1">
                         <div className="mn1up"><img src={m11} alt="" /></div>
                         <div className="mn1down"><img src={m12} alt="" /></div>
@@ -32,7 +42,7 @@ const Menu1container = () => {
                         <button onClick={()=>{ navigate('/menuview', { state: { menuType: 'breakfast' } })}}>VIEW MORE</button>
                     </div>
                 </div>
-                <div className="manu1up">
+                <div className="manu1up" data-aos="zoom-in">
                     <div className="mn1">
                         <div className="mn1up"><img src={n11} alt="" /></div>
                         <div className="mn1down"><img src={n12} alt="" /></div>
@@ -47,7 +57,7 @@ const Menu1container = () => {
                         <button onClick={()=>{ navigate('/menuview', { state: { menuType: 'lunch' } })}}>VIEW MORE</button>
                     </div>
                 </div>
-                <div className="manu1up">
+                <div className="manu1up"data-aos="zoom-in">
                     <div className="mn1">
                         <div className="mn1up"><img src={m11} alt="" /></div>
                         <div className="mn1down"><img src={m12} alt="" /></div>

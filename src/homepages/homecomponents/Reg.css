@@ -134,6 +134,7 @@
   border-radius: 5px;
   padding: 7px;
   font-size: 20px;
+  resize: none;
   }
   .tetxarea:focus{
     border: none;

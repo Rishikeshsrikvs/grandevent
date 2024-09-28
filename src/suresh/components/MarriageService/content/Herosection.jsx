@@ -20,7 +20,7 @@ const Herosection = () => {
               service and mouthwatering food.
             </p>
           </div>
-          <div class="right-div">
+          <div className="right-div">
             <div className="image-container">
               <img src={marriageimage1} alt="Hero Image" />
             </div>

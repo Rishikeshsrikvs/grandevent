@@ -1,21 +1,32 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Assuming you're using React Router
 import './Footer.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import { NavLink } from 'react-router-dom';
 import logo from './../../assets/Header/logo.png';
 import facebook from './../../assets/footer/facebook.png';
 import instagram from './../../assets/footer/instagram.png';
 import utube from './../../assets/footer/utube.png';
 const Footer = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    AOS.init({
+      duration: 2000, // Animation duration in ms
+      once: false,     // Whether animation should happen only once
+    });
+  }, []);
   return (
     <footer className='footerparent'>
       <div className="footmain">
         <div className="footleft">
           <div className="footleftlogo">
-            <img src={logo} alt="Company Logo" />
-            <p>We are committed to making every festival and special occasion at your house something to remember.</p>
+            <img src={logo}  data-aos="zoom-in" alt="Company Logo" />
+            <p data-aos="zoom-in">We are committed to making every festival and special occasion at your house something to remember.</p>
           </div>
-          <div className="footicon">
+          <div className="footicon" data-aos="fade-up">
             <p>Follow for more updates</p>
             <div className="footiconcon">
               <Link to="https://www.facebook.com/GrandEvents.Chennai/"target="_blank" rel="noopener noreferrer"><img src={facebook} alt="Social Icon 1" /></Link>
@@ -25,7 +36,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="footcenter">
+        <div className="footcenter" data-aos="fade-up">
           <h1>Quick Links</h1>
          
           <Link to="/">Home</Link>
@@ -35,7 +46,7 @@ const Footer = () => {
           <Link to="/Gallery">Gallery</Link>
         </div>
 
-        <div className="footright">
+        <div className="footright" data-aos="fade-up">
           <h1>Contact Us</h1>
           <p>'Grand Events A to Z Marriage Catering Services'<br/> #16, Kumaran Nagar, First St, Avadi, Chennai-71</p>
           <p>Phone: +91 94448 85453 / 73582 80982</p>

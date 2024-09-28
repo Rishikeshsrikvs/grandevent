@@ -1,8 +1,13 @@
 import "./Reg.css";
 import React, { useState } from 'react';
+import { useEffect } from "react";
 import api from "../../api/api"; // Import Axios for API call
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Registr = () => {
+  
+
+
   const [formData, setFormData] = useState({
     username: '',
     email: '',
@@ -45,23 +50,33 @@ const Registr = () => {
           setSuccessMessage('Your message has been sent successfully!');
           setFormData({ username: '', email: '', yourphone: '', message: '' });
           setErrors({});
+          setTimeout(() => {
+            setSuccessMessage('');
+          }, 3000);
         }
       } catch (error) {
         console.error("There was an error sending the message", error);
       }
     }
   };
-
+  useEffect(() => {
+   
+    AOS.init({
+      duration: 2000, // Animation duration in ms
+      once: false,     // Whether animation should happen only once
+    });
+  }, []);
   return (
     <div className="registermainparent">
       <div className="registparent">
         <div className="registermaincontainer">
-          <h1>READY TO PLAN YOUR EVENTS</h1>
-          <form onSubmit={handleSubmit} className="formsub">
-            <h2 className="sendmestext">Send Your Message</h2>
+          <h1 data-aos="zoom-in">READY TO PLAN YOUR EVENTS</h1>
+          <form onSubmit={handleSubmit} className="formsub" data-aos="zoom-in">
+            <h2 className="sendmestext"  data-aos="zoom-out">Send Your Message</h2>
             <div className="inputcon">
               <div>
                 <input
+                
                   placeholder="User Name"
                   type="text"
                   name="username"

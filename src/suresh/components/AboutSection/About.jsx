@@ -4,18 +4,25 @@ import pic1 from "../assets/pic1.png";
 import pic2 from "../assets/Baala.png";
 import foodposter from '../assets/food.png'
 import './About.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
 import lefttop from '../assets/design4.png'
 import Registr from "../../../homepages/homecomponents/Registr";
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    AOS.init({
+      duration: 2000, // Animation duration in ms
+      once: false,     // Whether animation should happen only once
+    });
+
   }, []);
   return (
     <>
       <div className="about">
         <div className="aboutcontainer">
           <div className="abthero">
-            <h1>ABOUT US</h1>
+            <h1 data-aos="zoom-in">ABOUT US</h1>
           </div>
 
           <div className="top-left">
@@ -23,16 +30,16 @@ const About = () => {
           </div>
 
           <div className="abtheading">
-            <h1>Best Caterers in Chennai</h1>
-            <h2>Grand Events A to Z Marriage Catering Services</h2>
+            <h1 data-aos="fade-up">Best Caterers in Chennai</h1>
+            <h2 data-aos="fade-down">Grand Events A to Z Marriage Catering Services</h2>
           </div>
           <div className="about-serve">
-            <div className="image-container1">
+            <div className="image-container1" data-aos="fade-right">
               <img src={pic1}  className="food-serve" />
               <img src={pic2}  className="bala-img"/>
             </div>
             <div className="about-serve-content">
-              <p>
+              <p  data-aos="fade-left">
                 Grand Events A to Z Marriage Catering Services are the best and
                 well organized catering service provider in Chennai.started in
                 2014 at Avadi in Chennai. We are successfully doing best
@@ -54,7 +61,7 @@ const About = () => {
 
           <div className="about-details">
             <div className="about-details-content">
-              <p>
+              <p data-aos="fade-right">
                 We are always glad to be at your service, driven by providing
                 continuous service to fulfill your requirements to the best of
                 our abilities, resources, and name. Based in Chennai catering
@@ -70,8 +77,8 @@ const About = () => {
                 "Hygienic" foods.Contact Us to get a schedule for your Wedding
                 Catering Service in Chennai
               </p>
-              <div className="food-poster">
-                <img src={foodposter} className="poster"/>
+              <div className="food-poster" >
+                <img src={foodposter} className="poster" data-aos="fade-left"/>
               </div>
             </div>
           </div>

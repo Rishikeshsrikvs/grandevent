@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import api from '../../api/api';
 import './Getquote.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Getquote = () => {
   const [name, setName] = useState('');
@@ -13,6 +15,11 @@ const Getquote = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false); // Detect screen size
 
   useEffect(() => {
+    AOS.init({
+      duration: 2000, // Animation duration in ms
+      once: false,     // Whether animation should happen only once
+    });
+  
     // Check screen size on initial load and on window resize
     const handleResize = () => {
       const isSmall = window.innerWidth <= 768;
@@ -65,6 +72,9 @@ const Getquote = () => {
       if (response.status === 201) {
         setSuccessMessage('Your quote request has been submitted successfully!');
         setErrorMessage('');
+        setTimeout(() => {
+          setSuccessMessage('');
+        }, 4000);
         // Clear form fields
         setName('');
         setContact('');
@@ -83,7 +93,7 @@ const Getquote = () => {
   };
 
   return (
-    <div className="getquote-container">
+    <div className="getquote-container"  data-aos="zoom-out">
       {isSmallScreen && !isFormVisible && (
         <button className="getquote-button" onClick={toggleFormVisibility}>
           Get Quote
@@ -128,7 +138,7 @@ const Getquote = () => {
             onClick={handleSubmit}
           />
           
-          {/* {successMessage && <div className="success-message">{successMessage}</div>} */}
+          {successMessage && <div className="success-message">{successMessage}</div>}
           {errorMessage && <div className="error-message">{errorMessage}</div>}
         </div>
       )}

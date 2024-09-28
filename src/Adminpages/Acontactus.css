@@ -1,23 +1,23 @@
-.contactformcon{
-    background-color:black;
-    margin-top: 20px;
+.contactformcon {
+  background-color: black;
+  margin-top: 20px;
+}
+.contactformcon table {
+  width: 100%;
+  border: none;
+}
+.contactformcon tr {
+  background-color: white;
+}
 
+.contactformcon th,
+.contactformcon td {
+  padding: 4px;
+  border: none;
+  text-align: center;
 }
-.contactformcon table{
-    width: 100%;
-    border: none;
-}
-.contactformcon tr{
-    background-color:white;
-}
-
-.contactformcon th,.contactformcon td{
-   padding: 4px;
-    border: none;
-    text-align: center;
-}
-.cadone{
-    background-color: green;
-    padding: 6px 10px;
-    font-size: 15px;
+.cadone {
+  background-color: green;
+  padding: 6px 10px;
+  font-size: 15px;
 }
