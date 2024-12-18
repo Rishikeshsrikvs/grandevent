@@ -1,101 +1,98 @@
+.aeventcon {
+  display: flex;
+  flex-direction: row;
 
-.aeventcon{
-    display: flex;
-    flex-direction: row;
-   
-    flex-wrap: wrap;
-    width: 100%;
-    border: 1px solid black;
-    height: 100%;
-    
-   
+  flex-wrap: wrap;
+  width: 100%;
+  border: 1px solid black;
+  height: 100%;
+}
+.aeventtitlecon {
+  width: 100%;
 
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 10px;
 }
-.aeventtitlecon{
-    width: 100%;
-   
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
-    padding: 10px ;
+.aeventtitlecon button {
+  font-family: Outfit;
+  font-size: 24px;
+  font-weight: 600;
+  height: 43px;
+  padding: 2px 10px;
+  margin-top: 0;
+  letter-spacing: 0.07em;
+  text-align: left;
+  color: #ffffff;
+  background-color: #141414;
 }
-.aeventtitlecon button{
-    font-family: Outfit;
-    font-size: 24px;
-    font-weight: 600;
-    height: 43px;
-    padding: 2px 10px;
-    margin-top: 0;
-    letter-spacing: 0.07em;
-    text-align: left;
-    color: #FFFFFF;
-    background-color: #141414;
-
+.aeventtable {
+  width: 100%;
 }
-.aeventtable{
-    width: 100%;
-
+.aeventtable table {
+  width: 100%;
+  border-collapse: collapse;
 }
-.aeventtable table{
-    width: 100%;
-    border-collapse: collapse;
+.aeventtable tr {
 }
-.aeventtable tr{
-
+.aeventtable td,
+th {
+  border: 1px solid black;
 }
-.aeventtable td,th{
-    border: 1px solid black;
+.eventdetail td {
+  padding: 4px;
 }
-.eventdetail td{
-    padding: 4px;
+.eventbuttonstr {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
 }
-.eventbuttonstr{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5px;
+.eventbuttonstr {
+  color: #ffffff;
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  letter-spacing: 0.07em;
+  text-align: left;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 2px;
 }
-.eventbuttonstr{
-    color:#FFFFFF;
-    font-family: Outfit;
-font-size: 16px;
-font-weight: 600;
-border-radius: 4px;
-letter-spacing: 0.07em;
-text-align: left;
-justify-content: space-evenly;
-align-items: center;
-text-align: center;
-padding: 2px;
-
+.eventbuttonstr > div:hover {
+  background-color: gray;
 }
-.eventbuttonstr >div:hover{
-    background-color: gray;
+.eadone {
+  width: 47%;
+  background-color: #1d8f3c;
+  margin-bottom: 2px;
+  padding: 2px;
 }
-.eadone{
-    width: 47%;
-    background-color: #1D8F3C;
-    margin-bottom: 4px;
-    padding: 2px;
+.eadeny {
+  width: 40%;
+  background-color: #f91b1b;
+  margin-bottom: 2px;
+  padding: 2px;
 }
-.eadeny{
-    width: 40%;
-    background-color: #F91B1B;
-    margin-bottom: 4px;
-    padding: 2px;
-}
-.eamodify{
-    width: 70%;
-    padding: 2px;
-    background-color: #135CFF;
+.eamodify {
+  width: 70%;
+  padding: 2px;
+  background-color: #135cff;
 }
 
-.aeventtitlecon button.atestname{
-    background-color: aliceblue;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: #141414;
+.aeventtitlecon button.atestname {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #141414;
 }
-.aeventtitlecon button.atestname SPAN{
-    font-weight: bolder;
+.aeventtitlecon button.atestname SPAN {
+  font-weight: bolder;
+}
+.nocontent {
+  text-align: center;
+  padding: 5px;
 }

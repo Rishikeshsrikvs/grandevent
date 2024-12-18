@@ -1,8 +1,8 @@
-import axios from 'axios';
+import axios from "axios";
 
 // Create an Axios instance
 const api = axios.create({
-  baseURL: 'https://grandevents.onrender.com' // Set your base URL here
+  baseURL: "https://grandevents-ciokd.ondigitalocean.app", // Set your base URL here
 });
 
 export default api;

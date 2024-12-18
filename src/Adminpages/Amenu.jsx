@@ -1,26 +1,26 @@
-import React, { useEffect, useState } from 'react';
-import './Amenu.css';
-import { useAuth } from './auth/AuthContext';
-import api from '../api/api';
+import React, { useEffect, useState } from "react";
+import "./Amenu.css";
+import { useAuth } from "./auth/AuthContext";
+import api from "../api/api";
 
 const Amenu = () => {
   const token = useAuth().token;
 
   const [pdfFile, setPdfFile] = useState(null);
   const [thumbnailFile, setThumbnailFile] = useState(null);
-  const [menuType, setMenuType] = useState('breakfast');
-  const [menuTitle, setMenuTitle] = useState('');
-  const [message, setMessage] = useState('');
+  const [menuType, setMenuType] = useState("breakfast");
+  const [menuTitle, setMenuTitle] = useState("");
+  const [message, setMessage] = useState("");
   const [menuList, setMenuList] = useState([]);
   const [showModal, setShowModal] = useState(false);
-  const [currentMenuImage, setCurrentMenuImage] = useState('');
+  const [currentMenuImage, setCurrentMenuImage] = useState("");
 
   useEffect(() => {
     fetchAllMenus();
   }, [token]);
 
   const fetchAllMenus = () => {
-    const endpoints = ['breakfast', 'lunch', 'dinner', 'differ'];
+    const endpoints = ["breakfast", "lunch", "dinner", "differ"];
     const fetchPromises = endpoints.map((type) =>
       api.get(`/api/admin/${type}`, {
         headers: {
@@ -41,7 +41,7 @@ const Amenu = () => {
         setMenuList(combinedMenus);
       })
       .catch((error) => {
-        console.error('Error fetching menu lists:', error);
+        console.error("Error fetching menu lists:", error);
       });
   };
 
@@ -49,53 +49,60 @@ const Amenu = () => {
     e.preventDefault();
 
     if (!menuType || !pdfFile || !thumbnailFile || !menuTitle) {
-      setMessage('Menu title, PDF, and thumbnail are required.');
+      setMessage("Menu title, PDF, and thumbnail are required.");
       return;
     }
 
     const formData = new FormData();
-    formData.append('menuTitle', menuTitle);
-    formData.append('PDF', pdfFile);
-    formData.append('Thumbnail', thumbnailFile);
+    formData.append("menuTitle", menuTitle);
+    formData.append("PDF", pdfFile);
+    formData.append("Thumbnail", thumbnailFile);
 
     try {
       await api.post(`/api/admin/${menuType}`, formData, {
         headers: {
           authorization: token,
-          'Content-Type': 'multipart/form-data',
+          "Content-Type": "multipart/form-data",
         },
       });
 
-      setMessage('Menu uploaded successfully!');
+      setMessage("Menu uploaded successfully!");
       setPdfFile(null);
       setThumbnailFile(null);
-      setMenuTitle('');
+      setMenuTitle("");
       fetchAllMenus(); // Refetch the menu list after a successful upload
+
+      // Clear the success message after 4 seconds
+      setTimeout(() => setMessage(""), 4000);
     } catch (error) {
-      setMessage('There was an error uploading the menu.');
-      console.error('Menu upload error:', error);
+      setMessage("There was an error uploading the menu.");
+      console.error("Menu upload error:", error);
     }
   };
 
   const handleImageFetch = async (menuId, type) => {
     try {
-      const response = await fetch(`${api.defaults.baseURL}/${type}Image/${menuId}`, {
-        headers: {
-          authorization: token,
-        },
-      });
+      const response = await fetch(
+        `${api.defaults.baseURL}/${type}Image/${menuId}`,
+        {
+          headers: {
+            authorization: token,
+          },
+        }
+      );
 
-      if (!response.ok) throw new Error('Failed to fetch image');
+      if (!response.ok) throw new Error("Failed to fetch image");
 
       const blob = await response.blob(); // Convert response to Blob
       const imageUrl = URL.createObjectURL(blob); // Create a local URL for the Blob
       setCurrentMenuImage(imageUrl);
       setShowModal(true);
     } catch (error) {
-      console.error('Error fetching image:', error);
-      setMessage('There was an error fetching the image.');
+      console.error("Error fetching image:", error);
+      setMessage("There was an error fetching the image.");
     }
   };
+
   const handleDelete = async (menuId, type) => {
     try {
       await api.delete(`/api/admin/${type}/${menuId}`, {
@@ -103,27 +110,26 @@ const Amenu = () => {
           authorization: token,
         },
       });
-      setMessage('Menu deleted successfully!');
+      setMessage("Menu deleted successfully!");
       fetchAllMenus(); // Refetch menus after successful deletion
     } catch (error) {
-      setMessage('There was an error deleting the menu.');
-      console.error('Menu delete error:', error);
+      setMessage("There was an error deleting the menu.");
+      console.error("Menu delete error:", error);
     }
   };
 
   const closeModal = () => {
     setShowModal(false);
-    setCurrentMenuImage('');
+    setCurrentMenuImage("");
   };
 
   return (
-    <div className='adashmmain'>
-      <h1>GALLERY</h1>
+    <div className="adashmmain">
+      <h1>MENU</h1>
       <div className="galmain">
-        <h1>GALLERY LIST</h1>
+        <h1>MENU LIST</h1>
         <form className="galform" onSubmit={handleSubmit}>
           {/* Form content for uploading files */}
-          {/* Your existing form content */}
           <div className="galsub">
             <div className="galin">
               <label htmlFor="thumbnailFile">UPLOAD THUMBNAIL</label>
@@ -134,13 +140,17 @@ const Amenu = () => {
                 onChange={(e) => setThumbnailFile(e.target.files[0])}
                 required
               />
-              <p>{thumbnailFile ? `Selected Thumbnail: ${thumbnailFile.name}` : ''}</p>
+              <p>
+                {thumbnailFile
+                  ? `Selected Thumbnail: ${thumbnailFile.name}`
+                  : ""}
+              </p>
             </div>
 
             <div className="galline">
-              <span className='galln'></span>
+              <span className="galln"></span>
               <span>OR</span>
-              <span className='galln'></span>
+              <span className="galln"></span>
             </div>
             <div className="galin">
               <label htmlFor="">DRIVE</label>
@@ -157,13 +167,13 @@ const Amenu = () => {
                 onChange={(e) => setPdfFile(e.target.files[0])}
                 required
               />
-              <p>{pdfFile ? `Selected PDF: ${pdfFile.name}` : ''}</p>
+              <p>{pdfFile ? `Selected PDF: ${pdfFile.name}` : ""}</p>
             </div>
 
             <div className="galline">
-              <span className='galln'></span>
+              <span className="galln"></span>
               <span>OR</span>
-              <span className='galln'></span>
+              <span className="galln"></span>
             </div>
             <div className="galin">
               <label htmlFor="">DRIVE</label>
@@ -194,18 +204,20 @@ const Amenu = () => {
               required
             />
           </div>
-          <div className="galbutton"><button type="submit">SUBMIT</button></div>
+          <div className="galbutton">
+            <button type="submit">SUBMIT</button>
+          </div>
           {message && <p className="success-message">{message}</p>}
         </form>
       </div>
 
-      <table className='galtable'>
+      <table className="galtable">
         <thead>
           <tr>
-            <th className='gatno'>No</th>
+            <th className="gatno">No</th>
             <th>Menu Type</th>
-            <th className='gattit'>Title</th>
-            <th className='gatnone'></th>
+            <th className="gattit">Title</th>
+            <th className="gatnone"></th>
           </tr>
         </thead>
         <tbody>
@@ -215,9 +227,13 @@ const Amenu = () => {
                 <td>{index + 1}</td>
                 <td>{menu.type}</td>
                 <td>{menu.menuName}</td>
-                <td className='galdeletebtn'>
-                  <button onClick={() => handleDelete(menu._id, menu.type)}>DELETE</button>
-                  <button onClick={() => handleImageFetch(menu._id, menu.type)}>VIEW</button>
+                <td className="galdeletebtn">
+                  <button onClick={() => handleDelete(menu._id, menu.type)}>
+                    DELETE
+                  </button>
+                  <button onClick={() => handleImageFetch(menu._id, menu.type)}>
+                    VIEW
+                  </button>
                 </td>
               </tr>
             ))
@@ -229,17 +245,24 @@ const Amenu = () => {
         </tbody>
       </table>
 
-      {/* Modal for showing the image */}
       {showModal && (
         <div className="modal">
           <div className="modal-content">
-            <span className="close-button" onClick={closeModal}>&times;</span>
-            {currentMenuImage && <img src={currentMenuImage} alt="Menu Preview" className="modal-image" />}
+            <span className="close-button" onClick={closeModal}>
+              &times;
+            </span>
+            {currentMenuImage && (
+              <img
+                src={currentMenuImage}
+                alt="Menu Preview"
+                className="modal-image"
+              />
+            )}
           </div>
         </div>
       )}
     </div>
   );
-}
+};
 
 export default Amenu;
